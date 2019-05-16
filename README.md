@@ -1,1 +1,1 @@
-# convolutional-tsetlin-machine
+# The Convolutional Tsetlin Machine (coming soon)
