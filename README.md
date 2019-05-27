@@ -9,11 +9,11 @@ The Convolutional Tsetlin Machine learns interpretable filters using proposition
   <img width="460" height="300" src="https://github.com/olegranmo/blob/blob/master/Inference_1.png">
 </p>
 
-![Figure 4](https://github.com/olegranmo/blob/blob/master/Inference_1.png)
-
 ### Learning
 
-![Figure 4](https://github.com/olegranmo/blob/blob/master/Learning.png)
+<p align="center">
+  <img width="500" src="https://github.com/olegranmo/blob/blob/master/Learning.png">
+</p>
 
 ### Goal State
 
