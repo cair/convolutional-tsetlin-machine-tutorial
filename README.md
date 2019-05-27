@@ -1,4 +1,4 @@
-# The Convolutional Tsetlin Machine (coming soon)
+# The Convolutional Tsetlin Machine (under construction)
 The Convolutional Tsetlin Machine learns interpretable filters using propositional formulae. It is an interpretable alternative to convolutional neural networks.
 
 ## Demo
