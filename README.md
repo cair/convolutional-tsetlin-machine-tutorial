@@ -11,7 +11,7 @@ The Convolutional Tsetlin Machine learns interpretable filters using proposition
 
 ### Goal State
 
-
+![Figure 4](https://github.com/olegranmo/blob/blob/master/Goal_State.png)
 
 ## Learning Behaviour
 The below figure depicts training and test accuracy for the Convolutional Tsetlin Machine on MNIST, epoch-by-epoch, in a single run. 
