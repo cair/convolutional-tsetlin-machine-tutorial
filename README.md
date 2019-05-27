@@ -5,6 +5,8 @@ The Convolutional Tsetlin Machine learns interpretable filters using proposition
 
 ### Recognition
 
+![Figure 4](https://github.com/olegranmo/blob/blob/master/Inference_3.png)
+
 ### Learning
 
 ## Learning Behaviour
