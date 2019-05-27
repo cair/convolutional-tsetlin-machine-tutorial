@@ -12,7 +12,7 @@ The Convolutional Tsetlin Machine learns interpretable filters using proposition
 ### Learning
 
 <p align="center">
-  <img width="110%" src="https://github.com/olegranmo/blob/blob/master/Learning.png">
+  <img width="105%" src="https://github.com/olegranmo/blob/blob/master/Learning.png">
 </p>
 
 ### Goal State
