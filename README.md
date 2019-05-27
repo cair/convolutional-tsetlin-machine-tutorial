@@ -5,6 +5,10 @@ The Convolutional Tsetlin Machine learns interpretable filters using proposition
 
 ### Recognition
 
+<p align="center">
+  <img width="460" height="300" src="https://github.com/olegranmo/blob/blob/master/Inference_1.png">
+</p>
+
 ![Figure 4](https://github.com/olegranmo/blob/blob/master/Inference_1.png)
 
 ### Learning
