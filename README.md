@@ -9,6 +9,8 @@ The Convolutional Tsetlin Machine learns interpretable filters using proposition
 
 ### Learning
 
+![Figure 4](https://github.com/olegranmo/blob/blob/master/Learning.png)
+
 ### Goal State
 
 ![Figure 4](https://github.com/olegranmo/blob/blob/master/Goal_State.png)
