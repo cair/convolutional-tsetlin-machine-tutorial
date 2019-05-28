@@ -22,7 +22,9 @@ A Tsetlin Automaton is a finite state machine, and below you see a Tsetlin Autom
 </p>
 When the automaton is in states 1-3 (left side) it performs Action 1, and when it is in states 4-6 (right side) it performs Action 2.
 
-The Tsetlin Automaton learns by changing state. As seen in the figure, the state transition is decided by whether the Tsetlin Automaton receives a penalty or reward. Being in state 3 in the figure, the Tsetlin Automaton would select Action 1. Assume this triggers a penalty from the environment. The Tsetlin Automaton would then move from state 3 to state 4:
+<p>
+The Tsetlin Automaton learns by changing state. As seen in the figure, each state transition is decided by whether the Tsetlin Automaton receives a penalty or reward. Being in state 3 in the figure (marked with a solid black circle), the Tsetlin Automaton would select Action 1. Assume this triggers a penalty from the environment. The Tsetlin Automaton would then move from state 3 to state 4:
+</p>
 <p align="center">
   <img width="65%" src="https://github.com/olegranmo/blob/blob/master/fixed_deterministic_run_2.png">
 </p>
@@ -30,9 +32,13 @@ It is now on the right side of the state space and will be performing Action 2. 
 <p align="center">
   <img width="65%" src="https://github.com/olegranmo/blob/blob/master/fixed_deterministic_run_3.png">
 </p>
+<p>
 At this point it is quite confident that Action 2 is better than Action 1. Now, two or more consequtive penalties are needed to make the Tsetlin Automaton change its mind and switch back to performing Action 1 again.
+</p>
 
-This simple learning mechanism has a few remarkable properties. The Tsetlin Automaton acts predictably, only changing action when switching between state 3 and 4. This support stable collectives of many cooperating Tsetlin Automata, solving more complex problems. Further, it never stops learning, adapting to a changing environment. Finally, by increasing the number of states, it learns more accurately. Indeed, as the number of states and learning iterations approaches infinity, the Tsetlin Automaton finds itself performing the optimal action with probability arbitrary close to unity.
+<p>
+This simple learning mechanism has some remarkable properties. The Tsetlin Automaton acts predictably, only changing action when switching between state 3 and 4. This support stable collectives of many cooperating Tsetlin Automata, solving more complex problems. Further, it never stops learning, adapting changes in the environment. This helps avoiding getting stuck at local optima.  Finally, by increasing the number of states, it learns more accurately. Indeed, as the number of states and learning iterations approaches infinity, the Tsetlin Automaton finds itself performing the optimal action with probability arbitrary close to unity.
+</p>
 
 ### Recognition
 Rather than providing hand-crafted features which can be used for image classification, the Convolutional Tsetlin Machine (CTM) learns feature detectors. We will explain the workings of the CTM by an illustrative example of noisy 2D XOR recognition and learning. Consider the CTM depicted in the below figure. 
