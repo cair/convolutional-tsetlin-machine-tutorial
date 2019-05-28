@@ -12,6 +12,10 @@ Test accuracy peaks at 99.50% after 168 epochs and 99.51% after 327 epochs. Furt
 
 ### The Tsetlin Automaton
 
+The Convolutional Tsetlin Machine is based on the Tsetlin
+Automaton (TA), one of the pioneering solutions to the well-known multi-armed bandit problem and the
+first Finite State Learning Automaton (FSLA). 
+
 <p align="center">
   <img width="65%" src="https://github.com/olegranmo/blob/blob/master/fixed_deterministic_run_1.png">
 </p>
