@@ -13,12 +13,16 @@ Test accuracy peaks at 99.50% after 168 epochs and 99.51% after 327 epochs. Furt
 ### The Tsetlin Automaton
 
 The Convolutional Tsetlin Machine is based on the Tsetlin
-Automaton (TA), one of the pioneering solutions to the well-known multi-armed bandit problem and the
-first Finite State Learning Automaton (FSLA). 
+Automaton, one of the pioneering solutions to the well-known multi-armed bandit problem and the
+first Finite State Learning Automaton. A Tsetlin Automaton performs actions in an environment. For each action, the environment responds with a penalty or a reward depending on the merit of the action. The goal of the Tsetlin Automaton is to as quickly as possible, through trial and error, infer which action has the highest probability of eliciting a reward from the environment.
 
+A Tsetlin Automaton is a finite state machine, and below you see a Tsetlin Automaton with 6 states, 3 states per action. 
 <p align="center">
   <img width="65%" src="https://github.com/olegranmo/blob/blob/master/fixed_deterministic_run_1.png">
 </p>
+When the automaton is in states 1-3 (left side) it performs Action 1, and when it is in states 4-6 (right side) it performs Action 2.
+
+The Tsetlin Automaton learns by changing state. 
 
 ### Recognition
 Rather than providing hand-crafted features which can be used for image classification, the Convolutional Tsetlin Machine (CTM) learns feature detectors. We will explain the workings of the CTM by an illustrative example of noisy 2D XOR recognition and learning. Consider the CTM depicted in the below figure. 
