@@ -37,7 +37,7 @@ At this point it is quite confident that Action 2 is better than Action 1. Now, 
 </p>
 
 <p>
-This simple learning mechanism has some remarkable properties. The Tsetlin Automaton acts predictably, only changing action when switching between state 3 and 4. This support stable collectives of many cooperating Tsetlin Automata, solving more complex problems. Further, it never stops learning, adapting changes in the environment. This helps avoiding getting stuck at local optima.  Finally, by increasing the number of states, it learns more accurately. Indeed, as the number of states and learning iterations approaches infinity, the Tsetlin Automaton finds itself performing the optimal action with probability arbitrary close to unity.
+This simple learning mechanism has some remarkable properties. It makes the Tsetlin Automaton act predictably, only changing action when switching between states 3 and 4. This support stable collectives of many cooperating Tsetlin Automata, solving more complex problems. Further, the Tsetlin Automaton never stops learning, adapting to changes in the environment. This helps avoiding getting stuck at local optima.  Finally, by increasing the number of states, the Tsetlin Automaton learns more accurately. Indeed, as the number of states and learning iterations approaches infinity, the Tsetlin Automaton finds itself performing the optimal action with probability arbitrary close to unity.
 </p>
 
 ### Recognition
