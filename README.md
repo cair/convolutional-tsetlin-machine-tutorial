@@ -1,3 +1,5 @@
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
 # The Convolutional Tsetlin Machine (under construction)
 The Convolutional Tsetlin Machine learns interpretable filters using propositional formulae. It is an interpretable alternative to convolutional neural networks.
 
@@ -53,7 +55,7 @@ Consider the 3x3 image shown below. The filter represented by the second positiv
 <p align="center">
   <img width="105%" src="https://github.com/olegranmo/blob/blob/master/Learning.png">
 </p>
-Thus, the Tsetlin Machine’s combined output is 1. Learning of feature detectors proceeds as follows: With the CTM’s threshold value set to T = 2, the probability of feedback is (T-v)/(2T)=0.25, and thus learning taking place, which pushes the CTM’s output v towards T=2. Note that Type I feedback reinforces true positive output and reduces false negative output whereas Type II feedback reduces false positive output.
+Thus, the Tsetlin Machine’s combined output is 1. Learning of feature detectors proceeds as follows: With the CTM’s threshold value set to T = 2, the probability of feedback is $$\frac{T-v}{2T}=0.25$$  (T-v)/(2T)=0.25, and thus learning taking place, which pushes the CTM’s output v towards T=2. Note that Type I feedback reinforces true positive output and reduces false negative output whereas Type II feedback reduces false positive output.
 
 ### Goal State
 A subsequent state of the CTM is shown below.
