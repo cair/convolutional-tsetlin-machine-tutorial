@@ -30,7 +30,7 @@ It is now on the right side of the state space and will be performing Action 2. 
 <p align="center">
   <img width="65%" src="https://github.com/olegranmo/blob/blob/master/fixed_deterministic_run_3.png">
 </p>
-At this point it is quite confident that Action 2 is better than Action 1. Now, two or more consequtive penalties are needed to make the Tsetlin Automaton change its mind and switch back to performing Action 1.
+At this point it is quite confident that Action 2 is better than Action 1. Now, two or more consequtive penalties are needed to make the Tsetlin Automaton change its mind and switch back to performing Action 1 again.
 
 This simple learning mechanism has a few remarkable properties. The Tsetlin Automaton acts predictably, only changing action when switching between state 3 and 4. This support stable collectives of many cooperating Tsetlin Automata, solving more complex problems. Further, it never stops learning, adapting to a changing environment. Finally, by increasing the number of states, it learns more accurately. Indeed, as the number of states and learning iterations approaches infinity, the Tsetlin Automaton finds itself performing the optimal action with probability arbitrary close to unity.
 
