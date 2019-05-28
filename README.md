@@ -30,7 +30,7 @@ It is now on the right side of the state space and will be performing Action 2. 
 <p align="center">
   <img width="65%" src="https://github.com/olegranmo/blob/blob/master/fixed_deterministic_run_3.png">
 </p>
-At this point it is more confident that Action 2 is better than Action 1.
+At this point it is more confident that Action 2 is better than Action 1 and two or more consequtive penalties are needed to make it change its mind and switch back to performing Action 1. 
 
 ### Recognition
 Rather than providing hand-crafted features which can be used for image classification, the Convolutional Tsetlin Machine (CTM) learns feature detectors. We will explain the workings of the CTM by an illustrative example of noisy 2D XOR recognition and learning. Consider the CTM depicted in the below figure. 
