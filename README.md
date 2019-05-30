@@ -46,6 +46,10 @@ This simple learning mechanism has some remarkable properties. It makes the Tset
   <img width="10%" src="https://github.com/olegranmo/blob/blob/master/Filter.png">
 </p>
 
+<p align="center">
+  <img width="30%" src="https://github.com/olegranmo/blob/blob/master/Patterns.png">
+</p>
+
 ### Clause Formation
 
 <p align="center">
