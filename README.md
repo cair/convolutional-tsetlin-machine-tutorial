@@ -10,7 +10,7 @@ Test accuracy peaks at 99.50% after 168 epochs and 99.51% after 327 epochs. Furt
 
 ## Step-by-Step Walkthrough of Inference
 
-### Example Problem: The 2D Noise XOR Problem
+### Example Problem: 2D Noise XOR
 
 We use the 2D Noisy XOR Problem to illustrate the inference steps of the Tsetlin Machine. The 2D Noisy XOR dataset contains 4x4 binary images, exemplified below.
 <p align="center">
