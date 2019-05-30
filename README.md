@@ -44,17 +44,16 @@ This simple learning mechanism has some remarkable properties. It makes the Tset
 
 We use the 2D Noisy XOR Problem to illustrate the inference steps of the Tsetlin Machine. The 2D Noisy XOR dataset contains 4x4 binary images. The bits of each image have been set randomly, expect for the 2x2 patch in the upper right corner, which reveals the class of the image. The patterns associated with each class is shown in the figure below.
 <p align="center">
-  <img width="30%" src="https://github.com/olegranmo/blob/blob/master/Patterns.png">
+  <img width="25%" src="https://github.com/olegranmo/blob/blob/master/Patterns.png">
 </p>
 As seen, a diagonal line is associated with class 1, while a horizontal line is associated with class 0. The dataset thus models a 2D version of XOR-relation.
 
 ### Pattern Recognition Task
 
-Four a 4x4 image, there are four distinct 2x2 patches. Each patch consists of four propositional variables <img src="http://latex.codecogs.com/svg.latex?\mathbf{X} = [x_{1,1}, x_{2,1}, x_{1,2}, x_{2,2}]" border="0"/>: 
+For a 4x4 image, there are four distinct 2x2 patches. Each patch consists of four propositional variables <img src="http://latex.codecogs.com/svg.latex?\mathbf{X} = [x_{1,1}, x_{2,1}, x_{1,2}, x_{2,2}]" border="0"/>, where each variable either takes the value 0 or 1: 
 <p align="center">
   <img width="10%" src="https://github.com/olegranmo/blob/blob/master/Filter.png">
 </p>
-where variable either takes the value 0 or 1.
 
 Rather than providing hand-crafted features which can be used for image classification, the Convolutional Tsetlin Machine. learns feature detectors. For 2D Noisy XOR, the task is to learn a 2x2 convolution filter. The 
 Convolutional Tsetlin Machine uses easy-to-interpret conjunctive clauses as filters. For a 2x2 filter, a conjunctive clause is built by ANDing a selection of the propositional variables or their negations <img src="http://latex.codecogs.com/svg.latex?x_{1,1}, x_{2,1}, x_{1,2}, x_{2,2}, \lnot x_{1,1}, \lnot  x_{2,1}, \lnot  x_{1,2}, \lnot x_{2,2}" border="0"/>.
