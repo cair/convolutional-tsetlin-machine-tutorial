@@ -40,6 +40,12 @@ At this point it is quite confident that Action 2 is better than Action 1. Now, 
 This simple learning mechanism has some remarkable properties. It makes the Tsetlin Automaton act predictably, only changing action when switching between states 3 and 4. This support stable collectives of many cooperating Tsetlin Automata, solving more complex problems. Further, the Tsetlin Automaton never stops learning, adapting to changes in the environment. This helps avoiding getting stuck at local optima.  Finally, by increasing the number of states, the Tsetlin Automaton learns more accurately. Indeed, as the number of states and learning iterations approaches infinity, the Tsetlin Automaton finds itself performing the optimal action with probability arbitrary close to unity.
 </p>
 
+### Tsetlin Machine Structure
+
+<p align="center">
+  <img width="65%" src="https://github.com/olegranmo/blob/blob/master/Example_Configuration.png">
+</p>
+
 ### Recognition
 Rather than providing hand-crafted features which can be used for image classification, the Convolutional Tsetlin Machine (CTM) learns feature detectors. We will explain the workings of the CTM by an illustrative example of noisy 2D XOR recognition and learning. Consider the CTM depicted in the below figure. 
 <p align="center">
