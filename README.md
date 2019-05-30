@@ -42,12 +42,16 @@ This simple learning mechanism has some remarkable properties. It makes the Tset
 
 ### Example: The 2D Noise XOR Problem
 
-<p align="center">
-  <img width="10%" src="https://github.com/olegranmo/blob/blob/master/Filter.png">
-</p>
-
+We use the 2D Noisy XOR Problem to illustrate the inference steps of the Tsetlin Machine. The 2D Noisy XOR dataset contains 4x4 binary images. The bits of each image have been set randomly, expect for the 2x2 patch in the upper right corner, which reveals the class of the image. The patterns associated with each class is shown in the figure below.
 <p align="center">
   <img width="30%" src="https://github.com/olegranmo/blob/blob/master/Patterns.png">
+</p>
+As seen, a diagonal line is associated with class 1, while a horizontal line is associated with class 0. The dataset thus models a 2D version of XOR-relation.
+
+### Pattern Recognition Task
+
+<p align="center">
+  <img width="10%" src="https://github.com/olegranmo/blob/blob/master/Filter.png">
 </p>
 
 ### Clause Formation
