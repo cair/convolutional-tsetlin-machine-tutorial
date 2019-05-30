@@ -10,6 +10,21 @@ Test accuracy peaks at 99.50% after 168 epochs and 99.51% after 327 epochs. Furt
 
 ## Step-by-Step Walkthrough of Inference
 
+### Example Problem: The 2D Noise XOR Problem
+
+We use the 2D Noisy XOR Problem to illustrate the inference steps of the Tsetlin Machine. The 2D Noisy XOR dataset contains 4x4 binary images. The bits of each image have been set randomly, expect for the 2x2 patch in the upper right corner, which reveals the class of the image. The patterns associated with each class is shown in the figure below.
+<p align="center">
+  <img width="25%" src="https://github.com/olegranmo/blob/blob/master/Patterns.png">
+</p>
+As seen, a diagonal line is associated with class 1, while a horizontal line is associated with class 0. The dataset thus models a 2D version of XOR-relation.
+
+For a 4x4 image, there are four distinct 2x2 patches. Each patch consists of four propositional variables <img src="http://latex.codecogs.com/svg.latex?\mathbf{X} = [x_{1,1}, x_{2,1}, x_{1,2}, x_{2,2}]" border="0"/>, where each variable either takes the value 0 or 1: 
+<p align="center">
+  <img width="10%" src="https://github.com/olegranmo/blob/blob/master/Filter.png">
+</p>
+
+Rather than providing hand-crafted features which can be used for image classification, the Convolutional Tsetlin Machine learns feature detectors. For 2D Noisy XOR, the task is to learn a 2x2 convolution filter.
+
 ### The Tsetlin Automaton
 
 The Convolutional Tsetlin Machine is based on the Tsetlin
@@ -39,23 +54,6 @@ At this point it is quite confident that Action 2 is better than Action 1. Now, 
 <p>
 This simple learning mechanism has some remarkable properties. It makes the Tsetlin Automaton act predictably, only changing action when switching between states 3 and 4. This supports stable collectives of many cooperating Tsetlin Automata, taking part in solving more complex problems. Further, the Tsetlin Automaton never stops learning, adapting to changes in the environment. This helps avoiding getting stuck at local optima.  Finally, the accuracy and speed of learning is controlled by the number of states. As the number of states and learning iterations approach infinity, the Tsetlin Automaton performs the optimal action with probability arbitrary close to unity. In other words, Tsetlin Automata learning is asymptotically optimal.
 </p>
-
-### Example: The 2D Noise XOR Problem
-
-We use the 2D Noisy XOR Problem to illustrate the inference steps of the Tsetlin Machine. The 2D Noisy XOR dataset contains 4x4 binary images. The bits of each image have been set randomly, expect for the 2x2 patch in the upper right corner, which reveals the class of the image. The patterns associated with each class is shown in the figure below.
-<p align="center">
-  <img width="25%" src="https://github.com/olegranmo/blob/blob/master/Patterns.png">
-</p>
-As seen, a diagonal line is associated with class 1, while a horizontal line is associated with class 0. The dataset thus models a 2D version of XOR-relation.
-
-### Pattern Recognition Task
-
-For a 4x4 image, there are four distinct 2x2 patches. Each patch consists of four propositional variables <img src="http://latex.codecogs.com/svg.latex?\mathbf{X} = [x_{1,1}, x_{2,1}, x_{1,2}, x_{2,2}]" border="0"/>, where each variable either takes the value 0 or 1: 
-<p align="center">
-  <img width="10%" src="https://github.com/olegranmo/blob/blob/master/Filter.png">
-</p>
-
-Rather than providing hand-crafted features which can be used for image classification, the Convolutional Tsetlin Machine learns feature detectors. For 2D Noisy XOR, the task is to learn a 2x2 convolution filter.
 
 
 ### Clause Formation
