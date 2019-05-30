@@ -13,8 +13,8 @@ Test accuracy peaks at 99.50% after 168 epochs and 99.51% after 327 epochs. Furt
 ### The Tsetlin Automaton
 
 The Convolutional Tsetlin Machine is based on the Tsetlin
-Automaton, introduced in 1961 and one of the pioneering solutions to the well-known multi-armed bandit problem and the
-first Finite State Learning Automaton. A Tsetlin Automaton performs actions in an environment. For each action, the environment responds with a penalty or a reward depending on the merit of the action. The goal of the Tsetlin Automaton is to as quickly as possible, through trial and error, infer which action has the highest probability of eliciting a reward from the environment.
+Automaton, introduced by M. L. Tsetlin in 1961. The Tsetlin Automaton is one of the pioneering solutions to the well-known multi-armed bandit problem and the
+first Finite State Learning Automaton. In all brevity, a Tsetlin Automaton performs actions sequentially in an environment. For each action, the environment responds stochastically with a penalty or a reward according to an unknown reward probability distribution. Based on the feedback from the environment, the goal of the Tsetlin Automaton is to, as quickly as possible, infer which action has the highest probability of eliciting a reward.
 
 A Tsetlin Automaton is a finite state machine, and below you see a Tsetlin Automaton with 6 states, 3 states per action. 
 <p align="center">
