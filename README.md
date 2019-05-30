@@ -55,10 +55,12 @@ For a 4x4 image, there are four distinct 2x2 patches. Each patch consists of fou
   <img width="10%" src="https://github.com/olegranmo/blob/blob/master/Filter.png">
 </p>
 
-Rather than providing hand-crafted features which can be used for image classification, the Convolutional Tsetlin Machine. learns feature detectors. For 2D Noisy XOR, the task is to learn a 2x2 convolution filter. The 
-Convolutional Tsetlin Machine uses easy-to-interpret conjunctive clauses as filters. For a 2x2 filter, a conjunctive clause is built by ANDing a selection of the propositional variables or their negations <img src="http://latex.codecogs.com/svg.latex?x_{1,1}, x_{2,1}, x_{1,2}, x_{2,2}, \lnot x_{1,1}, \lnot  x_{2,1}, \lnot  x_{1,2}, \lnot x_{2,2}" border="0"/>.
+Rather than providing hand-crafted features which can be used for image classification, the Convolutional Tsetlin Machine learns feature detectors. For 2D Noisy XOR, the task is to learn a 2x2 convolution filter.
+
 
 ### Clause Formation
+
+The Convolutional Tsetlin Machine uses easy-to-interpret conjunctive clauses as filters. The propositional variables <img src="http://latex.codecogs.com/svg.latex?x_{1,1}, x_{2,1}, x_{1,2}, x_{2,2}" border="0"/> and their negations <img src="http://latex.codecogs.com/svg.latex?\lnot{x_{1,1}}, \lnot{x_{2,1}}, \lnot{x_{1,2}}, \lnot{x_{2,2}}" border="0"/> are referred to as literals. A conjunctive clause consists is built by ANDing a selection of the literals.
 
 <p align="center">
   <img width="90%" src="https://github.com/olegranmo/blob/blob/master/Example_Configuration_1a.png">
