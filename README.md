@@ -40,6 +40,12 @@ At this point it is quite confident that Action 2 is better than Action 1. Now, 
 This simple learning mechanism has some remarkable properties. It makes the Tsetlin Automaton act predictably, only changing action when switching between states 3 and 4. This supports stable collectives of many cooperating Tsetlin Automata, taking part in solving more complex problems. Further, the Tsetlin Automaton never stops learning, adapting to changes in the environment. This helps avoiding getting stuck at local optima.  Finally, the accuracy and speed of learning is controlled by the number of states. As the number of states and learning iterations approach infinity, the Tsetlin Automaton performs the optimal action with probability arbitrary close to unity. In other words, Tsetlin Automata learning is asymptotically optimal.
 </p>
 
+### Example: The 2D Noise XOR Problem
+
+<p align="center">
+  <img width="30%" src="https://github.com/olegranmo/blob/blob/master/Filter.png">
+</p>
+
 ### Clause Formation
 
 <p align="center">
