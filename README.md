@@ -21,7 +21,7 @@ The bits of each image have been set randomly, expect for the 2x2 patch in the u
 <p align="center">
   <img width="25%" src="https://github.com/olegranmo/blob/blob/master/Patterns.png">
 </p>
-As seen, a diagonal line is associated with class 1, while a horizontal line is associated with class 0. The dataset thus models a 2D version of XOR-relation.
+As seen, a diagonal line is associated with class 1, while a horizontal line is associated with class 0. The dataset thus models a 2D version of the XOR-relation.
 
 For a 4x4 image, there are four distinct 2x2 patches. Each patch consists of four propositional variables <img src="http://latex.codecogs.com/svg.latex?\mathbf{X} = [x_{1,1}, x_{2,1}, x_{1,2}, x_{2,2}]" border="0"/>, where each variable either takes the value 0 or 1: 
 <p align="center">
