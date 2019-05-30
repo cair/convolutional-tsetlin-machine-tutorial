@@ -60,7 +60,7 @@ Rather than providing hand-crafted features which can be used for image classifi
 
 ### Clause Formation
 
-The Convolutional Tsetlin Machine uses easy-to-interpret conjunctive clauses as filters. The propositional variables <img src="http://latex.codecogs.com/svg.latex?x_{1,1}, x_{2,1}, x_{1,2}, x_{2,2}" border="0"/> and their negations <img src="http://latex.codecogs.com/svg.latex?\lnot{x_{1,1}}, \lnot{x_{2,1}}, \lnot{x_{1,2}}, \lnot{x_{2,2}}" border="0"/> are referred to as literals. A conjunctive clause consists is built by ANDing a selection of the literals.
+The Convolutional Tsetlin Machine uses easy-to-interpret conjunctive clauses as filters. The propositional variables <img src="http://latex.codecogs.com/svg.latex?x_{1,1}, x_{2,1}, x_{1,2}, x_{2,2}" border="0"/> and their negations <img src="http://latex.codecogs.com/svg.latex?\lnot{x_{1,1}}, \lnot{x_{2,1}}, \lnot{x_{1,2}}, \lnot{x_{2,2}}" border="0"/> are referred to as literals. A conjunctive clause is built by ANDing a selection of the literals.
 
 <p align="center">
   <img width="90%" src="https://github.com/olegranmo/blob/blob/master/Example_Configuration_1a.png">
