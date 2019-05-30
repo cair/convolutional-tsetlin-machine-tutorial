@@ -50,10 +50,7 @@ As seen, a diagonal line is associated with class 1, while a horizontal line is 
 
 ### Pattern Recognition Task
 
-Rather than providing hand-crafted features which can be used for image classification, the Convolutional Tsetlin Machine. learns feature detectors. For 2D Noisy XOR, the task is to learn a 2x2 convolution filter. The Convolutional Tsetlin Machine uses easy-to-interpret conjunctive clauses as filters. A conjunctive clause consists of propositional clauses and their negations:
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;1 \land \left(\bigwedge_{k \in \mathbf{I}^I} x_k\right) \land \left( \bigwedge_{k \in \bar{\mathbf{I}}^I} \lnot x_k\right)" />
-- <img src="http://chart.apis.google.com/chart?cht=tx&chl=E_k=mc^2-m_0c^2" /> 
-
+Rather than providing hand-crafted features which can be used for image classification, the Convolutional Tsetlin Machine. learns feature detectors. For 2D Noisy XOR, the task is to learn a 2x2 convolution filter. The Convolutional Tsetlin Machine uses easy-to-interpret conjunctive clauses as filters. A conjunctive clause consists of propositional clauses and their negations: <img src="https://latex.codecogs.com/png.latex?A" />
 
 <p align="center">
   <img width="10%" src="https://github.com/olegranmo/blob/blob/master/Filter.png">
