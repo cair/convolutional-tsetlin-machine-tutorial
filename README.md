@@ -43,7 +43,7 @@ This simple learning mechanism has some remarkable properties. It makes the Tset
 ### Clause Formation
 
 <p align="center">
-  <img width="80%" src="https://github.com/olegranmo/blob/blob/master/Example_Configuration_1b.png">
+  <img width="80%" src="https://github.com/olegranmo/blob/blob/master/Example_Configuration_1a.png">
 </p>
 
 ### Recognition
