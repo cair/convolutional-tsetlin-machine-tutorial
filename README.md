@@ -1,22 +1,20 @@
 # The Convolutional Tsetlin Machine (under construction)
-The Convolutional Tsetlin Machine learns interpretable filters using propositional formulae. It is an interpretable alternative to convolutional neural networks.
-
-## Demo
+The Convolutional Tsetlin Machine learns interpretable filters using propositional formulae. The formulae are composed by a collective of Tsetlin Automata. The Convolutional Tsetlin Machine is an interpretable alternative to convolutional neural networks.
 
 ## Learning Behaviour
 The below figure depicts training and test accuracy for the Convolutional Tsetlin Machine on MNIST, epoch-by-epoch, in a single run. 
 ![Figure 4](https://github.com/olegranmo/blob/blob/master/performance_by_epoch_MNIST.png)
-Test accuracy peaks at 99.50% after 168 epochs and 99.51% after 327 epochs. Further, test accuracy climbs quickly in the first epochs, passing 99% already in epoch 2. Training accuracy approaches 100%. 
+Test accuracy peaks at 99.50% after 168 epochs and 99.51% after 327 epochs. Further, it climbs quickly in the first epochs, passing 99% already in epoch 2. Training accuracy approaches 100%. 
 
 ## Step-by-Step Walkthrough of Inference
 
 ### Example Problem: 2D Noise XOR
 
-We use the 2D Noisy XOR dataset to demonstrate how the Tsetlin Machine recognizes patterns and how these patterns are learnt from example images. The 2D Noisy XOR dataset contains 4x4 binary images, exemplified below.
+I will use the 2D Noisy XOR dataset to demonstrate how the Convolutional Tsetlin Machine recognizes patterns and how these patterns are learnt from example images. The 2D Noisy XOR dataset contains 4x4 binary images, exemplified below.
 <p align="center">
   <img width="12%" src="https://github.com/olegranmo/blob/blob/master/Example_Image.png">
 </p>
-The bits of each image have been set randomly, expect for the 2x2 patch in the upper right corner, marked by green numbers. The four bits in the patch reveal the class of the image:
+The 9 bits of each image have been set randomly, expect for the four bits in the 2x2 patch found in the upper right corner of the image, marked by green bit values. These four bits reveal the class of the image:
 <p align="center">
   <img width="25%" src="https://github.com/olegranmo/blob/blob/master/Patterns.png">
 </p>
@@ -89,6 +87,9 @@ A subsequent state of the CTM is shown below.
   <img width="65%" src="https://github.com/olegranmo/blob/blob/master/Goal_State.png">
 </p>
 Note that there are now two positive clauses which detect their pattern in the top-right corner patch. The combined output of all clauses is 2; thus, no further learning is necessary for the detection of the XOR pattern in this patch. Also, the location of the occurrence of each pattern is included. The location information uses a bit representation as follows: Suppose an XOR pattern occurs at the three X-coordinates 1, 4, and 6. For the corresponding binary location representation, these coordinates are considered thresholds: If a coordinate is greater than a threshold, then the corresponding bit in the binary representation will be 0; otherwise, it is set to 1. Thus, the representation of the X-coordinates 1, 4, and 6 will be ‘111’, ‘011’ and ‘001’, respectively. These representations of the location of 2x2 patterns are also learned by TAs.
+
+## Demo
+
 
 ## Licence
 
