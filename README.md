@@ -67,7 +67,7 @@ When the automaton is in states 1-3 (left side) it performs Action 1, and when i
 </p>
 
 <p>
-The Tsetlin Automaton learns by changing state. Each state transition is decided by whether the Tsetlin Automaton receives a reward or a penalty. The Tsetlin Automaton depicted above is in state 3 (marked with a solid black circle). Accordingly,  it selects Action 1. Assume this triggers a penalty from the environment. The Tsetlin Automaton then moves from state 3 to state 4:
+The Tsetlin Automaton learns by changing state. Each state transition is decided by the feedback from the environment (reward or penalty). As shown in the above figure, a reward makes the Tsetlin Automaton change state away from the centre, while a penalty makes it change state towards the centre. The depicted Tsetlin Automaton is in state 3 (marked with a solid black circle). Accordingly,  it selects Action 1. Assume this triggers a penalty from the environment. The Tsetlin Automaton then moves from state 3 to state 4:
 </p>
 <p align="center">
   <img width="65%" src="https://github.com/olegranmo/blob/blob/master/fixed_deterministic_run_2.png">
