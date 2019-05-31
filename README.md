@@ -96,6 +96,7 @@ The Convolutional Tsetlin Machine uses easy-to-interpret conjunctive clauses as 
 <p align="center">
   <img width="10%" src="https://github.com/olegranmo/blob/blob/master/y_1a.png">
 </p>
+and to 0 for other patches.
 
 <p align="center">
   <img width="90%" src="https://github.com/olegranmo/blob/blob/master/Example_Configuration_1a.png">
