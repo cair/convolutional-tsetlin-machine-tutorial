@@ -39,7 +39,7 @@ This means that which image bit a propositional variable refers to depends both 
 </p>
 
 <p>
-For the 2D XOR dataset, the patch in the upper left part of the image, in position (2, 1), can be used to determine the class of the image, since it contains the discriminating 2D XOR-pattern. 
+For the 2D XOR dataset, the patch in the upper right part of the image, at position (2, 1), can be used to determine the class of the image, since it contains the discriminating 2D XOR-pattern. 
 </p>
 
 <p>
