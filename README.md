@@ -67,21 +67,21 @@ When the automaton is in states 1-3 (left side) it performs Action 1, and when i
 </p>
 
 <p>
-The Tsetlin Automaton learns by changing state. As seen in the figure, each state transition is decided by whether the Tsetlin Automaton receives a penalty or reward. Being in state 3 in the figure (marked with a solid black circle), the Tsetlin Automaton would select Action 1. Assume this triggers a penalty from the environment. The Tsetlin Automaton would then move from state 3 to state 4:
+The Tsetlin Automaton learns by changing state. Each state transition is decided by whether the Tsetlin Automaton receives a reward or a penalty. The Tsetlin Automaton depicted above is in state 3 (marked with a solid black circle). Accordingly,  it selects Action 1. Assume this triggers a penalty from the environment. The Tsetlin Automaton then moves from state 3 to state 4:
 </p>
 <p align="center">
   <img width="65%" src="https://github.com/olegranmo/blob/blob/master/fixed_deterministic_run_2.png">
 </p>
-It is now on the right side of the state space and will be performing Action 2. This time, the Tsetlin Automaton receives a reward, updating its state accordingly:
+It is now on the right side of the state space and therefore selects Action 2. This time, the Tsetlin Automaton receives a reward, updating its state accordingly:
 <p align="center">
   <img width="65%" src="https://github.com/olegranmo/blob/blob/master/fixed_deterministic_run_3.png">
 </p>
 <p>
-At this point it is quite confident that Action 2 is better than Action 1. Now, two or more consequtive penalties are needed to make the Tsetlin Automaton change its mind and switch back to performing Action 1 again.
+At this point, it is quite confident that Action 2 is better than Action 1. Indeed, two or more consequtive penalties are needed to make the Tsetlin Automaton change its mind and switch back to performing Action 1 again.
 </p>
 
 <p>
-This simple learning mechanism has some remarkable properties. It makes the Tsetlin Automaton act predictably, only changing action when switching between states 3 and 4. This supports stable collectives of many cooperating Tsetlin Automata, taking part in solving more complex problems. Further, the Tsetlin Automaton never stops learning, adapting to changes in the environment. This helps avoiding getting stuck at local optima.  Finally, the accuracy and speed of learning is controlled by the number of states. As the number of states and learning iterations approach infinity, the Tsetlin Automaton performs the optimal action with probability arbitrary close to unity. In other words, Tsetlin Automata learning is asymptotically optimal.
+This simple learning mechanism has some remarkable properties. It makes the Tsetlin Automaton act predictably, only changing action when switching between states 3 and 4 in the figure. This supports stable collectives of many cooperating Tsetlin Automata, taking part in solving more complex problems. Further, the Tsetlin Automaton never stops learning, adapting to changes in the environment. This helps avoiding getting stuck in local optima.  Finally, the accuracy and speed of learning is controlled by the number of states. As the number of states and learning cycles approach infinity, the Tsetlin Automaton performs the optimal action with probability arbitrary close to unity. In other words, Tsetlin Automata learning is asymptotically optimal.
 </p>
 
 
