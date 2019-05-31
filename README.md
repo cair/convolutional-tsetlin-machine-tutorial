@@ -10,15 +10,16 @@ Test accuracy peaks at 99.50% after 168 epochs and 99.51% after 327 epochs. Furt
 
 ### Example Problem: 2D Noise XOR
 
-I will use the 2D Noisy XOR dataset to demonstrate how the Convolutional Tsetlin Machine recognizes patterns and how these patterns are learnt from example images. The 2D Noisy XOR dataset contains 4x4 binary images, exemplified below.
+I will use the 2D Noisy XOR dataset to demonstrate how the Convolutional Tsetlin Machine recognizes patterns and how these patterns are learnt from example images. The 2D Noisy XOR dataset I consider here contains 3x3 binary images. Below you see an example image.
 <p align="center">
   <img width="12%" src="https://github.com/olegranmo/blob/blob/master/Example_Image.png">
 </p>
+
 The 9 bits of each image have been set randomly, expect for the four bits in the 2x2 patch found in the upper right corner of the image, marked by green bit values. These four bits reveal the class of the image:
 <p align="center">
   <img width="25%" src="https://github.com/olegranmo/blob/blob/master/Patterns.png">
 </p>
-As seen, a diagonal line is associated with class 1, while a horizontal line is associated with class 0. The dataset thus captures a 2D version of the XOR-relation.
+A diagonal line is associated with class 1, while a horizontal line is associated with class 0. The dataset thus captures a 2D version of the XOR-relation.
 
 For a 4x4 image, there are four distinct 2x2 patches. Each patch consists of four propositional variables <img src="http://latex.codecogs.com/svg.latex?\mathbf{X} = [x_{1,1}, x_{2,1}, x_{1,2}, x_{2,2}]" border="0"/>, where each variable either takes the value 0 or 1: 
 <p align="center">
