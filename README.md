@@ -43,7 +43,7 @@ For the 2D XOR dataset, the patch in the upper right part of the image, at posit
 </p>
 
 <p>
-I will now explain how the Convolutional Tsetlin Machine solves the above pattern recognitionn task, going through the recognition and learning steps in detail.
+I will now explain how the Convolutional Tsetlin Machine solves the above pattern recognition task, going through the recognition and learning steps in detail.
 </p>
 
 ### The Tsetlin Automaton
