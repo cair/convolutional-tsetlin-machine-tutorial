@@ -28,7 +28,7 @@ A horizontal line is associated with class 0, while a diagonal line is associate
 </p>
 
 <p>
-A 3x3 image contains four distinct 2x2 patches, located at different (x,y) coordinates within the image. One is located in the upper left of the image, at position (1,1), another at position (2,1), a third at location (1,2), and the fourth at location (2,2). Each of these patches forms an input vector to the Convolutional Tsetlin Machine. That is, a patch is modelled as four propositional variables <img src="http://latex.codecogs.com/svg.latex?\mathbf{X} = [x_{1,1}, x_{2,1}, x_{1,2}, x_{2,2}]" border="0"/>. The coordinates of the variables (lower index) are relative within the patch. This means that which bit within the image a propositional variable refers to depends on the position of the patch within the image.
+For this example, I consider convolution with 2x2 filters. A 3x3 image contains four distinct 2x2 patches, located at different (x,y) coordinates within the image. One is located in the upper left of the image, at position (1,1), another at position (2,1), a third at location (1,2), and the fourth at location (2,2). Each of these patches forms an input vector to the Convolutional Tsetlin Machine. That is, a patch is modelled as four propositional variables <img src="http://latex.codecogs.com/svg.latex?\mathbf{X} = [x_{1,1}, x_{2,1}, x_{1,2}, x_{2,2}]" border="0"/>. The coordinates of the variables (lower index) are relative within the patch. This means that which bit within the image a propositional variable refers to depends on the position of the patch within the image.
 <p align="center">
   <img width="10%" src="https://github.com/olegranmo/blob/blob/master/Filter.png">
 </p>
