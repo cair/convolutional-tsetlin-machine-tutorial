@@ -15,7 +15,7 @@ I will use the 2D Noisy XOR dataset to demonstrate how the Convolutional Tsetlin
   <img width="12%" src="https://github.com/olegranmo/blob/blob/master/Example_Image.png">
 </p>
 
-The 9 bits of each image have been set randomly, expect for the four bits in the 2x2 patch found in the upper right corner of the image, marked by green bit values. These four bits reveal the class of the image:
+The 9 bits of each image have been set randomly, except for the four bits in the 2x2 patch found in the upper right corner of the image, marked by green bit values. These four bits reveal the class of the image:
 <p align="center">
   <img width="25%" src="https://github.com/olegranmo/blob/blob/master/Patterns.png">
 </p>
