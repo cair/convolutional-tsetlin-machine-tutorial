@@ -77,12 +77,12 @@ The Tsetlin Automaton learns by changing state. Each state transition is decided
 <p align="center">
   <img width="65%" src="https://github.com/olegranmo/blob/blob/master/fixed_deterministic_run_2.png">
 </p>
-It is now on the right half of states and therefore selects Action 2. This time, the Tsetlin Automaton receives a reward, updating its state accordingly:
+It is now in the right half of states and therefore selects Action 2. This time, the Tsetlin Automaton receives a reward, updating its state accordingly:
 <p align="center">
   <img width="65%" src="https://github.com/olegranmo/blob/blob/master/fixed_deterministic_run_3.png">
 </p>
 <p>
-At this point, it is quite confident that Action 2 is better than Action 1. Indeed, two or more consequtive penalties are needed to make the Tsetlin Automaton change its mind and switch back to performing Action 1 again.
+At this point, it is quite confident that Action 2 is better than Action 1. Indeed, at least two consequtive penalties are needed to make the Tsetlin Automaton change its mind and switch back to performing Action 1 again.
 </p>
 
 <p>
