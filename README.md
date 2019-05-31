@@ -24,7 +24,7 @@ The 9 bits of the image are assigned coordinates (x,y), so that the upper left b
   <img width="25%" src="https://github.com/olegranmo/blob/blob/master/Patterns.png">
 </p>
 <p>
-A diagonal line is associated with class 1, while a horizontal line is associated with class 0. The dataset thus captures a 2D version of the XOR-relation.
+A horizontal line is associated with class 0, while a diagonal line is associated with class 1. The dataset thus captures a 2D version of the XOR-relation.
 </p>
 
 <p>
