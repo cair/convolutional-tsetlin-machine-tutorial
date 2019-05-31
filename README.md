@@ -18,7 +18,7 @@ I will use the 2D Noisy XOR dataset to demonstrate how the Convolutional Tsetlin
 </p>
 
 <p>
-The 9 bits of the image are assigned coordinates (x,y), so that the upper left bit is at position (1,1), the bit to its right is at position (2,1), while the bit below is at position (1,2), and so on. The 9 bit values are randomly set for each image, except for the four bits of the 2x2 patch in the upper right corner (marked by green bit values). These four bit values reveal the class of the image:
+The 9 bits of the image are assigned coordinates (x, y), so that the upper left bit is at position (1, 1), the bit to its right is at position (2, 1), while the bit below is at position (1, 2), and so on. The 9 bit values are randomly set for each image, except for the four bits of the 2x2 patch in the upper right corner (marked by green bit values). These four bit values reveal the class of the image:
 </p>
 <p align="center">
   <img width="25%" src="https://github.com/olegranmo/blob/blob/master/Patterns.png">
@@ -27,16 +27,16 @@ The 9 bits of the image are assigned coordinates (x,y), so that the upper left b
 A horizontal line is associated with class 0, while a diagonal line is associated with class 1. The dataset thus captures a 2D version of the XOR-relation.
 </p>
 <p>
-For this example, I consider convolution with 2x2 filters. A convolutional learning mechanism employing 2x2 filters must learn the four patterns above as well as which class they belong to. Note that due to the XOR-relation, linear classifiers will face difficulties handling this task. A 3x3 image contains four distinct 2x2 patches, located at different (x,y) coordinates within the image. One is located in the upper left of the image, at position (1,1), another at position (2,1), a third at position (1,2), and the fourth at position (2,2). Each patch is modelled as four propositional variables <img src="http://latex.codecogs.com/svg.latex?\mathbf{X} = [x_{1,1}, x_{2,1}, x_{1,2}, x_{2,2}]" border="0"/>. The coordinates of the variables (lower index) are the relative position of the variable within the patch. This means that which bit within the image a propositional variable refers to depends both on the coordinates of the variable within the patch and the position of the patch within the image.
+For this example, I consider convolution with 2x2 filters. A convolutional learning mechanism employing 2x2 filters must learn the four patterns above as well as which class they belong to. Note that due to the XOR-relation, linear classifiers will face difficulties handling this task. A 3x3 image contains four distinct 2x2 patches, located at different (x, y) coordinates within the image. One is located in the upper left of the image, at position (1, 1), another at position (2, 1), a third at position (1, 2), and the fourth at position (2, 2). Each patch is modelled as four propositional variables <img src="http://latex.codecogs.com/svg.latex?\mathbf{X} = [x_{1,1}, x_{2,1}, x_{1,2}, x_{2,2}]" border="0"/>. The coordinates of the variables (lower index) are the relative position of the variable within the patch. This means that which bit within the image a propositional variable refers to depends both on the coordinates of the variable within the patch and the position of the patch within the image.
 <p align="center">
   <img width="10%" src="https://github.com/olegranmo/blob/blob/master/Filter.png">
 </p>
 <p>
-As an example, the variable <img src="http://latex.codecogs.com/svg.latex?x_{1,1}" border="0"/> of the upper right patch refers to the bit at position (2,1) in the 3x3 image.
+As an example, the variable <img src="http://latex.codecogs.com/svg.latex?x_{1,1}" border="0"/> of the upper right patch refers to the bit at position (2, 1) in the 3x3 image.
 </p>
 
 <p>
-For the 2D XOR dataset, the patch in the upper left part of the image, in position (2,1), can be used to determine the class of the image, since it contains the discriminating 2D XOR-pattern. 
+For the 2D XOR dataset, the patch in the upper left part of the image, in position (2, 1), can be used to determine the class of the image, since it contains the discriminating 2D XOR-pattern. 
 </p>
 
 <p>
