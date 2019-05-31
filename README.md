@@ -25,7 +25,9 @@ A 3x3 image contains four distinct 2x2 patches, located at different (x,y) coord
 <p align="center">
   <img width="10%" src="https://github.com/olegranmo/blob/blob/master/Filter.png">
 </p>
+<p>
 As an example, the variable <img src="http://latex.codecogs.com/svg.latex?x_{1,1}" border="0"/> of the upper right patch refers to bit position (2,1) in the 3x3 image.
+</p>
 
 For the 2D XOR dataset, the patch in the upper left part of the image, in position (2,1), can be used to determine the class of the image, since it contains the discriminating 2D XOR-pattern. A convolutional learning mechanism employing 2x2 filters must learn the four patterns above to succeed, associating with them the corresponding class. Note that due to the XOR-relation, linear classifiers will face difficulties handling this task.
 
