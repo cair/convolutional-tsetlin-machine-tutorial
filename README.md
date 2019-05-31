@@ -77,7 +77,7 @@ The Tsetlin Automaton learns by changing state. Each state transition is decided
 <p align="center">
   <img width="65%" src="https://github.com/olegranmo/blob/blob/master/fixed_deterministic_run_2.png">
 </p>
-It is now on the right side of the state space and therefore selects Action 2. This time, the Tsetlin Automaton receives a reward, updating its state accordingly:
+It is now on the right half of states and therefore selects Action 2. This time, the Tsetlin Automaton receives a reward, updating its state accordingly:
 <p align="center">
   <img width="65%" src="https://github.com/olegranmo/blob/blob/master/fixed_deterministic_run_3.png">
 </p>
