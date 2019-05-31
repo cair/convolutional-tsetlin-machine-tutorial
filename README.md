@@ -63,7 +63,7 @@ A Tsetlin Automaton is a finite state machine. Below you see a two-action Tsetli
   <img width="65%" src="https://github.com/olegranmo/blob/blob/master/fixed_deterministic_run_1.png">
 </p>
 <p>
-When the automaton is in states 1-3 (left side) it performs Action 1, and when it is in states 4-6 (right side) it performs Action 2.
+When the automaton is in the left half of the states it performs Action 1, and when it is in the right half of states it performs Action 2.
 </p>
 
 <p>
