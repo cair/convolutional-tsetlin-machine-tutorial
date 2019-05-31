@@ -8,7 +8,7 @@ Test accuracy peaks at 99.50% after 168 epochs and 99.51% after 327 epochs. Furt
 
 ## Step-by-Step Walkthrough of Inference
 
-### Example Problem: 2D Noise XOR
+### Example Problem: 2D Noisy XOR
 
 <p>
 I will use the 2D Noisy XOR dataset to demonstrate how the Convolutional Tsetlin Machine recognizes patterns and how these patterns are learnt from example images. The 2D Noisy XOR dataset I consider contains 3x3 binary images. Below you see an example image.
