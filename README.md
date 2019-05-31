@@ -21,13 +21,13 @@ The 9 bits of each image have been set randomly, except for the four bits in the
 </p>
 A diagonal line is associated with class 1, while a horizontal line is associated with class 0. The dataset thus captures a 2D version of the XOR-relation.
 
-For a 3x3 image, there are four distinct 2x2 patches, located at different (x,y) coordinates within the image. One is located in the upper left of the image, at position (1,1), another at position (2,1), a third at location (1,2), and the fourth at location (2,2). Each patch consists of four propositional variables <img src="http://latex.codecogs.com/svg.latex?\mathbf{X} = [x_{1,1}, x_{2,1}, x_{1,2}, x_{2,2}]" border="0"/>, where each variable either takes the value 0 or 1: 
+A 3x3 image contains four distinct 2x2 patches, located at different (x,y) coordinates within the image. One is located in the upper left of the image, at position (1,1), another at position (2,1), a third at location (1,2), and the fourth at location (2,2). These patches forms the input vector to the Tsetlin Machine. Each patch consists of four propositional variables <img src="http://latex.codecogs.com/svg.latex?\mathbf{X} = [x_{1,1}, x_{2,1}, x_{1,2}, x_{2,2}]" border="0"/>. Each variable refers to the corresponding bit in the image, and takes the value 0 or 1.
 <p align="center">
   <img width="10%" src="https://github.com/olegranmo/blob/blob/master/Filter.png">
 </p>
-The patch in the upper left part of the image, in position (2,1), can be used to determine the class of the image, since it contains the discriminating 2D XOR-pattern.
+As an example, the variable <img src="http://latex.codecogs.com/svg.latex?x_{1,1}]" border="0"/> of the upper right patch refers to bit position (2,1) in the 3x3 image.
 
-A convolutional learning mechanism employing 2x2 filters must learn the four patterns above to succeed, associating with them the corresponding class. Note that due to the XOR-relation, linear classifiers will face difficulties handling this task.
+For the 2D XOR dataset, the patch in the upper left part of the image, in position (2,1), can be used to determine the class of the image, since it contains the discriminating 2D XOR-pattern. A convolutional learning mechanism employing 2x2 filters must learn the four patterns above to succeed, associating with them the corresponding class. Note that due to the XOR-relation, linear classifiers will face difficulties handling this task.
 
 I will now explain how the Convolutional Tsetlin Machine solves the above tasks, going through the recognition and learning steps in detail.
 
