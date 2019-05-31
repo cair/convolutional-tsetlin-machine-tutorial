@@ -37,7 +37,7 @@ As an example, the variable <img src="http://latex.codecogs.com/svg.latex?x_{1,1
 </p>
 
 <p>
-For the 2D XOR dataset, the patch in the upper left part of the image, in position (2,1), can be used to determine the class of the image, since it contains the discriminating 2D XOR-pattern. A convolutional learning mechanism employing 2x2 filters must learn the four patterns above to succeed, associating with them the corresponding class. Note that due to the XOR-relation, linear classifiers will face difficulties handling this task.
+For the 2D XOR dataset, the patch in the upper left part of the image, in position (2,1), can be used to determine the class of the image, since it contains the discriminating 2D XOR-pattern. A convolutional learning mechanism employing 2x2 filters must learn the four patterns above to succeed, associating them with the corresponding class. Note that due to the XOR-relation, linear classifiers will face difficulties handling this task.
 </p>
 
 <p>
