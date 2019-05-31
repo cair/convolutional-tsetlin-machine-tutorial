@@ -28,7 +28,7 @@ A horizontal line is associated with class 0, while a diagonal line is associate
 </p>
 
 <p>
-A 3x3 image contains four distinct 2x2 patches, located at different (x,y) coordinates within the image. One is located in the upper left of the image, at position (1,1), another at position (2,1), a third at location (1,2), and the fourth at location (2,2). These patches forms the input vector to the Tsetlin Machine. Each patch consists of four propositional variables <img src="http://latex.codecogs.com/svg.latex?\mathbf{X} = [x_{1,1}, x_{2,1}, x_{1,2}, x_{2,2}]" border="0"/>. Each variable refers to the corresponding bit in the image, and takes the value 0 or 1.
+A 3x3 image contains four distinct 2x2 patches, located at different (x,y) coordinates within the image. One is located in the upper left of the image, at position (1,1), another at position (2,1), a third at location (1,2), and the fourth at location (2,2). Each of these patches forms an input vector to the Convolutional Tsetlin Machine. That is, a patch is modelled as four propositional variables <img src="http://latex.codecogs.com/svg.latex?\mathbf{X} = [x_{1,1}, x_{2,1}, x_{1,2}, x_{2,2}]" border="0"/>. Each variable refers to the corresponding bit in the image, and takes the value 0 or 1.
 <p align="center">
   <img width="10%" src="https://github.com/olegranmo/blob/blob/master/Filter.png">
 </p>
