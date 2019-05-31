@@ -48,11 +48,9 @@ I will now explain how the Convolutional Tsetlin Machine solves the above patter
 
 ### The Tsetlin Automaton
 
-The Convolutional Tsetlin Machine is based on the Tsetlin
-Automaton, introduced by M. L. Tsetlin in 1961. The Tsetlin Automaton is one of the pioneering solutions to the well-known multi-armed bandit problem and the
-first Finite State Learning Automaton. In all brevity, a Tsetlin Automaton performs actions sequentially in an environment. For each action, the environment responds stochastically with a penalty or a reward according to an unknown reward probability distribution. Based on the feedback from the environment, the goal of the Tsetlin Automaton is to, as quickly as possible, infer which action has the highest probability of eliciting a reward.
+The Convolutional Tsetlin Machine is based on the Tsetlin Automaton, introduced by M. L. Tsetlin in 1961. The Tsetlin Automaton is one of the pioneering solutions to the well-known multi-armed bandit problem and the first Finite State Learning Automaton. A two-action Tsetlin Automaton choose among two actions, Action 1 or Action 2, and perform these sequentially in an environment. After each action has been performed, the environment responds stochastically with a penalty or a reward, according to an unknown reward probability distribution <img src="http://latex.codecogs.com/svg.latex?R=\[r_1, r_2\]" border="0"/>. When Action i is performed, the environment responds with a reward with probability <img src="http://latex.codecogs.com/svg.latex?r_i\]" border="0"/>. Based on the feedback from the environment, the goal of the Tsetlin Automaton is to, as quickly as possible, concentrate on the action that has the highest probability of eliciting a reward.
 
-A Tsetlin Automaton is a finite state machine, and below you see a Tsetlin Automaton with 6 states, 3 states per action. 
+A Tsetlin Automaton is a finite state machine. Below you see a two-action Tsetlin Automaton with 6 states, 3 states per action. 
 <p align="center">
   <img width="65%" src="https://github.com/olegranmo/blob/blob/master/fixed_deterministic_run_1.png">
 </p>
