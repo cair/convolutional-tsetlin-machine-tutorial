@@ -48,13 +48,23 @@ I will now explain how the Convolutional Tsetlin Machine solves the above patter
 
 ### The Tsetlin Automaton
 
-The Convolutional Tsetlin Machine is based on the Tsetlin Automaton, introduced by M. L. Tsetlin in 1961. The Tsetlin Automaton is one of the pioneering solutions to the well-known multi-armed bandit problem and the first Finite State Learning Automaton. A two-action Tsetlin Automaton choose among two actions, Action 1 or Action 2, and perform these sequentially in an environment. After each action has been performed, the environment responds stochastically with a penalty or a reward, according to an unknown reward probability distribution <img src="http://latex.codecogs.com/svg.latex?R=\[r_1, r_2\]" border="0"/>. When Action 1 is performed, the environment responds with a reward with probability <img src="http://latex.codecogs.com/svg.latex?r_1" border="0"/>, otherwise, it responds with a penalty. For Action 2, the probability of a reward is <img src="http://latex.codecogs.com/svg.latex?r_2" border="0"/>.  Based on the feedback from the environment, the goal of the Tsetlin Automaton is to, as quickly as possible, single in on the action that has the highest probability of eliciting a reward.
+<p>
+The Convolutional Tsetlin Machine is based on the Tsetlin Automaton, introduced by M. L. Tsetlin in 1961. The Tsetlin Automaton is one of the pioneering solutions to the well-known multi-armed bandit problem and the first Finite State Learning Automaton.
+</p>
 
-A Tsetlin Automaton is a finite state machine. Below you see a two-action Tsetlin Automaton with 6 states, 3 states per action. 
+<p>
+A two-action Tsetlin Automaton chooses among two actions, Action 1 or Action 2, and perform these sequentially in an environment. After each action has been performed, the environment responds stochastically with a penalty or a reward, according to an unknown reward probability distribution <img src="http://latex.codecogs.com/svg.latex?R=\[r_1, r_2\]" border="0"/>. When Action 1 is performed, the environment responds with a reward with probability <img src="http://latex.codecogs.com/svg.latex?r_1" border="0"/>, otherwise, it responds with a penalty. For Action 2, the probability of a reward is <img src="http://latex.codecogs.com/svg.latex?r_2" border="0"/>.  Based on the feedback from the environment, the goal of the Tsetlin Automaton is to, as quickly as possible, single in on the action that has the highest probability of eliciting a reward.
+</p>
+
+<p>
+A Tsetlin Automaton is a finite state machine. Below you see a two-action Tsetlin Automaton with 6 states, 3 states per action.
+</p>
 <p align="center">
   <img width="65%" src="https://github.com/olegranmo/blob/blob/master/fixed_deterministic_run_1.png">
 </p>
+<p>
 When the automaton is in states 1-3 (left side) it performs Action 1, and when it is in states 4-6 (right side) it performs Action 2.
+</p>
 
 <p>
 The Tsetlin Automaton learns by changing state. As seen in the figure, each state transition is decided by whether the Tsetlin Automaton receives a penalty or reward. Being in state 3 in the figure (marked with a solid black circle), the Tsetlin Automaton would select Action 1. Assume this triggers a penalty from the environment. The Tsetlin Automaton would then move from state 3 to state 4:
