@@ -54,7 +54,7 @@ The Convolutional Tsetlin Machine is based on the Tsetlin Automaton, introduced 
 
 #### Two-Action Tsetlin Automata
 <p>
-A two-action Tsetlin Automaton chooses among two actions, Action 1 or Action 2, and performs these sequentially in an environment. For each action performed, the environment responds stochastically with a penalty or a reward, according to an unknown reward probability distribution <img src="http://latex.codecogs.com/svg.latex?R=\[r_1, r_2\]" border="0"/>. When Action 1 is performed, the environment responds with a reward with probability <img src="http://latex.codecogs.com/svg.latex?r_1" border="0"/>, otherwise, it responds with a penalty. For Action 2, the probability of a reward is <img src="http://latex.codecogs.com/svg.latex?r_2" border="0"/>.  By interacting with the environment, the goal of the Tsetlin Automaton is to, as quickly as possible, single in on the action that has the highest probability of eliciting a reward.
+A two-action Tsetlin Automaton chooses among two actions, Action 1 or Action 2, and performs these sequentially in an environment. For each action performed, the environment responds stochastically with a Penalty or a Reward, according to an unknown reward probability distribution <img src="http://latex.codecogs.com/svg.latex?R=\[r_1, r_2\]" border="0"/>. When Action 1 is performed, the environment responds with a Reward with probability <img src="http://latex.codecogs.com/svg.latex?r_1" border="0"/>, otherwise, it responds with a Penalty. For Action 2, the probability of a Reward is <img src="http://latex.codecogs.com/svg.latex?r_2" border="0"/>.  By interacting with the environment, the goal of the Tsetlin Automaton is to, as quickly as possible, single in on the action that has the highest probability of eliciting a Reward.
 </p>
 
 <p>
@@ -68,23 +68,23 @@ When the automaton is in states 1-3 (left half) it performs Action 1, and when i
 </p>
 
 <p>
-The Tsetlin Automaton learns by changing state. Each state transition is decided by the feedback from the environment (reward or penalty). As shown in the figure above, a reward makes the Tsetlin Automaton change state away from the centre, while a penalty makes it change state towards the centre.
+The Tsetlin Automaton learns by changing state. Each state transition is decided by the feedback from the environment (Reward or Penalty). As shown in the figure above, a reward makes the Tsetlin Automaton change state away from the centre, while a penalty makes it change state towards the centre.
 </p>
 
 #### Example Run
 <p>
-The depicted Tsetlin Automaton is in state 3 (marked with a solid black circle). Accordingly, it selects Action 1. Assume this triggers a penalty from the environment. The Tsetlin Automaton then moves from state 3 to state 4:
+The depicted Tsetlin Automaton is in state 3 (marked with a solid black circle). Accordingly, it selects Action 1. Assume this triggers a Penalty from the environment. The Tsetlin Automaton then moves from state 3 to state 4:
 </p>
 
 <p align="center">
   <img width="65%" src="https://github.com/olegranmo/blob/blob/master/fixed_deterministic_run_2.png">
 </p>
-It is now in the right half of states and therefore selects Action 2. This time, the Tsetlin Automaton receives a reward, updating its state accordingly:
+It is now in the right half of states and therefore selects Action 2. This time, the Tsetlin Automaton receives a Reward, updating its state accordingly:
 <p align="center">
   <img width="65%" src="https://github.com/olegranmo/blob/blob/master/fixed_deterministic_run_3.png">
 </p>
 <p>
-At this point, it is quite confident that Action 2 is better than Action 1. Indeed, at least two consequtive penalties are needed to make the Tsetlin Automaton change its mind and switch back to performing Action 1 again.
+At this point, it is quite confident that Action 2 is better than Action 1. Indeed, at least two consequtive Penalties are needed to make the Tsetlin Automaton change its mind and switch back to performing Action 1 again.
 </p>
 
 <p>
