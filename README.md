@@ -102,11 +102,7 @@ The structure of the classic Tsetlin Machine is shown below. This structure form
   <img width="40%" src="https://github.com/olegranmo/blob/blob/master/Overall_Architecture.png">
 </p>
 <p>
-The Convolutional Tsetlin Machine takes the propositional variables <img src="http://latex.codecogs.com/svg.latex?x_{1,1}, x_{2,1}, x_{1,2}, x_{2,2}" border="0"/> and their negations <img src="http://latex.codecogs.com/svg.latex?\lnot{x_{1,1}}, \lnot{x_{2,1}}, \lnot{x_{1,2}}, \lnot{x_{2,2}}" border="0"/> as input. These are referred to as literals, forming a bit vector.
-</p>
-
-<p>
-The input is fed to a user set number of conjunctive clauses. These are evaluated to 0 or 1. Each clause is further assigned a fixed polarityt, + or -. The polarity decides whether the clause output is negative or positive. Positive clauses are used to recognize class y=1, while negative clauses are used to recognize class y=0. Finally, a summation operator aggregates the output of the clauses, while a threshold function decides the class y predicted for the input.
+The Convolutional Tsetlin Machine takes the propositional variables <img src="http://latex.codecogs.com/svg.latex?x_{1,1}, x_{2,1}, x_{1,2}, x_{2,2}" border="0"/> and their negations <img src="http://latex.codecogs.com/svg.latex?\lnot{x_{1,1}}, \lnot{x_{2,1}}, \lnot{x_{1,2}}, \lnot{x_{2,2}}" border="0"/> as input. These are referred to as literals, forming a bit vector. The input is fed to a user set number of conjunctive clauses. These evaluate to either 0 or 1. Each clause is further assigned a fixed polarity, + or -. The polarity decides whether the clause output is negative or positive. Negative clauses are used to recognize class y=0, while positive clauses are used to recognize class y=1. Finally, a summation operator aggregates the output of the clauses, while a threshold function decides the class predicted for the input.
 </p>
 
 #### The Conjunctive Clause
