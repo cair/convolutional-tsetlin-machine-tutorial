@@ -145,12 +145,12 @@ Each clause is then evaluated on each patch, and the outcome for each patch is O
 </p>
 
 <p>
-As in the classic Tsetlin Machine, the output from each clause is processed further by summation and then thresholding to decide the class:
+The above clause is highlighted in the figure below, together with the seven other conjunctive clauses of our example configuration: 
 </p>
 <p align="center">
   <img width="65%" src="https://github.com/olegranmo/blob/blob/master/Recognition.png">
 </p>
-The above configuration consists of four positive clauses which represent XOR patterns that must be present in a positive example image (positive features) and four negative clauses which represent patterns that will not trigger a positive image classification (negative features). As explained earlier, the bit patterns inside each clause are represented by the output of eight Tsetlin Automata, one for each literal in the 2x2 filter.
+The above configuration consists of four positive clauses which represent XOR patterns that must be present in a positive example image (positive features) and four negative clauses which represent patterns that will not trigger a positive image classification (negative features). As explained earlier, the bit patterns inside each clause are represented by the output of eight Tsetlin Automata, one for each literal in the 2x2 filter. As in the classic Tsetlin Machine, the output from each clause is processed further by summation and then thresholding to decide the class.
 
 ### Learning with the Convolutional Tsetlin Machine
 
