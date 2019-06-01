@@ -149,6 +149,15 @@ Note that there are now two positive clauses which detect their pattern in the t
 
 ## Demo
 
+## Citation
+
+```bash
+@article{granmo2019convtsetlin,
+  author = {{Granmo}, Ole-Christoffer and {Glimsdal}, Sondre and {Jiao}, Lei and {Goodwin}, Morten and {Omlin}, Christian W. and {Berge}, Geir Thore},
+  title = "{The Convolutional Tsetlin Machine}",
+  journal={arXiv preprint arXiv:1905.09688}, year={2019}
+}
+```
 
 ## Licence
 
