@@ -92,7 +92,7 @@ The above simple learning mechanism has some remarkable properties. It makes the
 </p>
 
 
-### Clause Formation
+### The Architecture of the Convolutional Tsetlin Machine
 
 #### The Clause
 <p>
@@ -114,14 +114,14 @@ A Convolutional Tsetlin Machine consists of several clauses, how many are decide
 The team in the figure has for instance decided to include <img src="http://latex.codecogs.com/svg.latex?{x_{1,1}}, {x_{2,2}}, \lnot{x_{1,2}}" border="0"/> and <img src="http://latex.codecogs.com/svg.latex?\lnot{x_{1,2}}" border="0"/>, producing the clause <img src="http://latex.codecogs.com/svg.latex?C = {x_{1,1}} \land {x_{2,2}} \land \lnot{x_{1,2}} \land \lnot{x_{1,2}}" border="0"/>.
 </p>
 
-### Recognition
+### Recognition with the Convolutional Tsetlin Machine
 Rather than providing hand-crafted features which can be used for image classification, the Convolutional Tsetlin Machine (CTM) learns feature detectors. We will explain the workings of the CTM by an illustrative example of noisy 2D XOR recognition and learning. Consider the CTM depicted in the below figure. 
 <p align="center">
   <img width="65%" src="https://github.com/olegranmo/blob/blob/master/Recognition.png">
 </p>
 It consists of four positive clauses which represent XOR patterns that must be present in a positive example image (positive features) and four negative clauses which represent patterns that will not trigger a positive image classification (negative features). The number of positive and negative clauses is a user-defined parameter. The bit patterns inside each clause are represented by the output of four Tsetlin Automata, one for each bit in a 2x2 filter.
 
-### Learning
+### Learning with the Convolutional Tsetlin Machine
 
 Consider the 3x3 image shown below. The filter represented by the second positive clause matches the patch in the top-right corner of the image and it is the only clause with output 1; similarly, none of the negative clauses respond since their patterns do not match the pattern found in the current patch 
 <p align="center">
