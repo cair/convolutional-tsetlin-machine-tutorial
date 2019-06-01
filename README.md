@@ -180,7 +180,7 @@ Thus, the Tsetlin Machine’s combined output is 1. Learning of feature detector
   <img width="90%" src="https://github.com/olegranmo/blob/blob/master/Example_Configuration_3a.png">
 </p>
 
-### Goal State
+### Goal State and Nash Equilibrium
 A subsequent state of the CTM is shown below.
 <p align="center">
   <img width="65%" src="https://github.com/olegranmo/blob/blob/master/Goal_State.png">
