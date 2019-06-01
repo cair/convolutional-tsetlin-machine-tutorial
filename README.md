@@ -149,7 +149,7 @@ To make the clauses location-aware, each patch is further enhanced with its coor
 
 #### Summation and Thresholding Step
 <p>
-The above clause is highlighted in the figure below, together with the seven other conjunctive clauses of our example configuration: 
+The above clause is highlighted in the figure below, together with the seven other conjunctive clauses of our example configuration. Also, each clause has been annoted with the positional information it has incorporated, using thresholds on the x and y coordinates.
 </p>
 <p align="center">
   <img width="65%" src="https://github.com/olegranmo/blob/blob/master/Recognition.png">
