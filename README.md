@@ -94,10 +94,10 @@ The above simple learning mechanism has some remarkable properties. It makes the
 
 ### The Architecture of the Convolutional Tsetlin Machine
 
-#### Architecture Overview
+#### Overview of Architecture
 
 <p align="center">
-  <img width="10%" src="https://github.com/olegranmo/blob/blob/master/Overall_Architecture.png">
+  <img width="40%" src="https://github.com/olegranmo/blob/blob/master/Overall_Architecture.png">
 </p>
 
 #### The Clause
