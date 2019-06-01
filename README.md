@@ -134,6 +134,7 @@ The team in the figure has for instance decided to include <img src="http://late
 
 ### Recognition with the Convolutional Tsetlin Machine
 
+#### Clause Convolution Step
 <p>
 The Convolutional Tsetlin Machine recognizes patterns by first turning the input image into patches. For our 2D Noisy XOR example, the 3x3 input image is turned into four 2x2 patches:
 </p>
@@ -141,9 +142,10 @@ The Convolutional Tsetlin Machine recognizes patterns by first turning the input
   <img width="60%" src="https://github.com/olegranmo/blob/blob/master/Convolution_Example.png">
 </p>
 <p>
-Each clause is then evaluated on each patch, and the outcome for each patch is ORed to produce the output of the convolution. The figure shows this procedure for one of the clauses in our 2D Noisy XOR example.
+Each conjunctive clause is then evaluated on each patch. For each clause, the outcome for each patch is ORed to produce the output of the clause. The figure shows this procedure for one of the clauses in our 2D Noisy XOR example.
 </p>
 
+#### Summation and Thresholding Step
 <p>
 The above clause is highlighted in the figure below, together with the seven other conjunctive clauses of our example configuration: 
 </p>
