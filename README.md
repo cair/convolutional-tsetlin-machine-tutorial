@@ -91,6 +91,8 @@ The above simple learning mechanism has some remarkable properties. It makes the
 
 
 ### Clause Formation
+
+#### The Clause
 <p>
 The Convolutional Tsetlin Machine uses conjunctive clauses as filters. A clause is built by ANDing a selection of the available propositional variables <img src="http://latex.codecogs.com/svg.latex?x_{1,1}, x_{2,1}, x_{1,2}, x_{2,2}" border="0"/> and their negations <img src="http://latex.codecogs.com/svg.latex?\lnot{x_{1,1}}, \lnot{x_{2,1}}, \lnot{x_{1,2}}, \lnot{x_{2,2}}" border="0"/> (the propositional variables and their negations are referred to as literals). The clause <img src="http://latex.codecogs.com/svg.latex?C = {x_{1,1}} \land {x_{2,2}} \land  \lnot{x_{1,2}} \land \lnot{x_{1,2}}" border="0"/>, for instance, evaluates to 1 for image patches with bit values:
 </p>
@@ -99,6 +101,7 @@ The Convolutional Tsetlin Machine uses conjunctive clauses as filters. A clause 
 </p>
 and to 0 for other image patches.
 
+#### The Clause Tsetlin Automata Team
 <p>
 A Convolutional Tsetlin Machine consists of several clauses, how many are decided by the user. For each clause, a team of Tsetlin Automata decides which literals are to be included in the clause. There are one Tsetlin Automaton per literal, deciding whether the literal should be excluded or included in the clause:
 <p>
