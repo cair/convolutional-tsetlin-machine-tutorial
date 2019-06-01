@@ -98,7 +98,6 @@ At this point, it is quite confident that Action 2 is better than Action 1. Inde
 The above simple learning mechanism has some remarkable properties. It makes the Tsetlin Automaton act predictably, only changing action when switching between the two centre states. This supports stable collectives of many cooperating Tsetlin Automata, taking part in solving more complex problems. Further, the Tsetlin Automaton never stops learning. Therefore, it can adapt to changes in the environment. This helps avoiding getting stuck in local optima.  Finally, the accuracy and speed of learning is controlled by the number of states. By increasing the number of states and learning cycles towards infinity, the Tsetlin Automaton performs the optimal action with probability arbitrary close to unity. In other words, Tsetlin Automata learning is asymptotically optimal.
 </p>
 
-
 ### The Architecture of the Convolutional Tsetlin Machine
 
 #### Overview of Architecture
@@ -142,6 +141,8 @@ The Convolutional Tsetlin Machine recognizes patterns by first turning the input
   <img width="60%" src="https://github.com/olegranmo/blob/blob/master/Convolution_Example.png">
 </p>
 <p>
+To make the clauses location-aware, each patch is further enhanced with its coordinates within the image (see figure). Location awareness may prove useful in applications where both patterns and their location are distinguishing features, e.g. recognition of facial features such as eyes, eyebrows, nose, mouth, etc. in facial expression recognition. These coordinates are incorporated as additional propositional variables, however, for the sake of clarity, I will not considere these coordinates further here.
+  
 Each conjunctive clause is then evaluated on each patch. For each clause, the outcome for each patch is ORed to produce the output of the clause. The figure shows this procedure for one of the clauses in our 2D Noisy XOR example.
 </p>
 
