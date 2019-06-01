@@ -52,6 +52,7 @@ I will now explain how the Convolutional Tsetlin Machine solves the above patter
 The Convolutional Tsetlin Machine is based on the Tsetlin Automaton, introduced by M. L. Tsetlin in 1961. The Tsetlin Automaton is one of the pioneering solutions to the well-known multi-armed bandit problem and the first Finite State Learning Automaton.
 </p>
 
+#### Two-Action Tsetlin Automata
 <p>
 A two-action Tsetlin Automaton chooses among two actions, Action 1 or Action 2, and performs these sequentially in an environment. For each action performed, the environment responds stochastically with a penalty or a reward, according to an unknown reward probability distribution <img src="http://latex.codecogs.com/svg.latex?R=\[r_1, r_2\]" border="0"/>. When Action 1 is performed, the environment responds with a reward with probability <img src="http://latex.codecogs.com/svg.latex?r_1" border="0"/>, otherwise, it responds with a penalty. For Action 2, the probability of a reward is <img src="http://latex.codecogs.com/svg.latex?r_2" border="0"/>.  By interacting with the environment, the goal of the Tsetlin Automaton is to, as quickly as possible, single in on the action that has the highest probability of eliciting a reward.
 </p>
@@ -70,8 +71,9 @@ When the automaton is in states 1-3 (left half) it performs Action 1, and when i
 The Tsetlin Automaton learns by changing state. Each state transition is decided by the feedback from the environment (reward or penalty). As shown in the figure above, a reward makes the Tsetlin Automaton change state away from the centre, while a penalty makes it change state towards the centre.
 </p>
 
+#### Example Run
 <p>
-<b>Example.</b> The depicted Tsetlin Automaton is in state 3 (marked with a solid black circle). Accordingly, it selects Action 1. Assume this triggers a penalty from the environment. The Tsetlin Automaton then moves from state 3 to state 4:
+The depicted Tsetlin Automaton is in state 3 (marked with a solid black circle). Accordingly, it selects Action 1. Assume this triggers a penalty from the environment. The Tsetlin Automaton then moves from state 3 to state 4:
 </p>
 
 <p align="center">
