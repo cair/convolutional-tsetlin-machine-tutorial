@@ -52,7 +52,7 @@ I will now explain how the Convolutional Tsetlin Machine solves the above patter
   <img width="20%" src="https://github.com/olegranmo/blob/blob/master/Michael_Lvovitch_Tsetlin.png">
 </p>
 <p align="center">
-  <i><b>Michael Lvovitch Tsetlin.</b> M. L. Tsetlin was a Russian mathematician and physicist who worked on cybernetics.</i>
+  <b>Michael Lvovitch Tsetlin (22 September 1924 – 30 May 1966).</b>
 </p>
 
 <p>
