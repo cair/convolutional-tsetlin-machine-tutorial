@@ -133,11 +133,15 @@ The team in the figure has for instance decided to include <img src="http://late
 </p>
 
 ### Recognition with the Convolutional Tsetlin Machine
-Rather than providing hand-crafted features which can be used for image classification, the Convolutional Tsetlin Machine (CTM) learns feature detectors. We will explain the workings of the CTM by an illustrative example of noisy 2D XOR recognition and learning. Consider the CTM depicted in the below figure.
 
+<p>
+The Convolutional Tsetlin Machine recognizes patterns by first turning the input image into patches. For our 2D Noisy XOR example, the 3x3 input image is turned into four 2x2 patches:
 </p>
 <p align="center">
   <img width="60%" src="https://github.com/olegranmo/blob/blob/master/Convolution_Example.png">
+</p>
+<p>
+Each clause is then evaluated on each patch, and the outcome for each patch is ORed to produce the output of the convolution. The figure shows this procedure for one of the clauses in our 2D Noisy XOR example.
 </p>
 
 <p align="center">
