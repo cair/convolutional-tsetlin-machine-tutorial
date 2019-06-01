@@ -100,10 +100,13 @@ The Convolutional Tsetlin Machine uses easy-to-interpret conjunctive clauses as 
 and to 0 for other image patches.
 
 <p>
-A Convolutional Tsetlin Machine consists of several clauses, how many are decided by the user. Each clause is composed by a team of Tsetlin Automata.
+A Convolutional Tsetlin Machine consists of several clauses, how many are decided by the user. For each clause, a team of Tsetlin Automata decides which literals are to be included in the clause. There are one Tsetlin Automaton per literal, deciding whether the literal should be excluded or included in the clause:
 <p>
 <p align="center">
   <img width="90%" src="https://github.com/olegranmo/blob/blob/master/Example_Configuration_1a.png">
+</p>
+<p>
+The team in the figure has for instance decided to include <img src="http://latex.codecogs.com/svg.latex?{x_{1,1}}, {x_{2,2}}, \lnot{x_{1,2}} \text{and} \lnot{x_{1,2}}" border="0"/>, producing the clause <img src="http://latex.codecogs.com/svg.latex?C = {x_{1,1}} \land {x_{2,2}} \land  \lnot{x_{1,2}} \land \lnot{x_{1,2}}" border="0"/>.
 </p>
 
 ### Recognition
