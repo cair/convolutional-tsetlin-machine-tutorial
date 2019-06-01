@@ -95,12 +95,21 @@ The above simple learning mechanism has some remarkable properties. It makes the
 ### The Architecture of the Convolutional Tsetlin Machine
 
 #### Overview of Architecture
-
+<p>
+The structure of the Tsetlin Machine is shown below. This structure forms the core of the Convolutional Tsetlin Machine:
+</p>
 <p align="center">
   <img width="40%" src="https://github.com/olegranmo/blob/blob/master/Overall_Architecture.png">
 </p>
+<p>
+The Convolutional Tsetlin Machine takes the propositional variables <img src="http://latex.codecogs.com/svg.latex?x_{1,1}, x_{2,1}, x_{1,2}, x_{2,2}" border="0"/> and their negations <img src="http://latex.codecogs.com/svg.latex?\lnot{x_{1,1}}, \lnot{x_{2,1}}, \lnot{x_{1,2}}, \lnot{x_{2,2}}" border="0"/> as input. These are referred to as literals, forming a bit vector.
+</p>
 
-#### The Clause
+<p>
+The input is fed to a user set number of conjunctive clauses. These are evaluated to 0 or 1. Each clause is further assigned a fixed polarityt, + or -. The polarity decides whether the clause output is negative or positive. Positive clauses are used to recognize class y=1, while negative clauses are used to recognize class y=0. Finally, a summation operator aggregates the output of the clauses, while a threshold function decides the class y predicted for the input.
+</p>
+
+#### The Conjunctive Clause
 <p>
 The Convolutional Tsetlin Machine uses conjunctive clauses as filters. A clause is built by ANDing a selection of the available propositional variables <img src="http://latex.codecogs.com/svg.latex?x_{1,1}, x_{2,1}, x_{1,2}, x_{2,2}" border="0"/> and their negations <img src="http://latex.codecogs.com/svg.latex?\lnot{x_{1,1}}, \lnot{x_{2,1}}, \lnot{x_{1,2}}, \lnot{x_{2,2}}" border="0"/> (the propositional variables and their negations are referred to as literals). The clause <img src="http://latex.codecogs.com/svg.latex?C = {x_{1,1}} \land {x_{2,2}} \land  \lnot{x_{1,2}} \land \lnot{x_{1,2}}" border="0"/>, for instance, evaluates to 1 for image patches with bit values:
 </p>
