@@ -103,7 +103,7 @@ The Convolutional Tsetlin Machine uses conjunctive clauses as filters. A clause 
 </p>
 and to 0 for other image patches.
 
-#### The Clause Tsetlin Automata Team
+#### A Tsetlin Automata Team for Composing Clauses
 <p>
 A Convolutional Tsetlin Machine consists of several clauses, how many are decided by the user. For each clause, a team of Tsetlin Automata decides which literals are to be included in the clause. There are one Tsetlin Automaton per literal, deciding whether the literal should be excluded or included in the clause:
 <p>
