@@ -49,8 +49,10 @@ I will now explain how the Convolutional Tsetlin Machine solves the above patter
 ### The Tsetlin Automaton
 
 <p align="center">
+  <figure>
   <img width="20%" src="https://github.com/olegranmo/blob/blob/master/Michael_Lvovitch_Tsetlin.png">
-  <b>Michael Lvovitch Tsetlin</b>
+  <figcaption>Michael Lvovitch Tsetlin</figcaption>
+  </figure>
 </p>
 
 <p>
