@@ -144,10 +144,13 @@ The Convolutional Tsetlin Machine recognizes patterns by first turning the input
 Each clause is then evaluated on each patch, and the outcome for each patch is ORed to produce the output of the convolution. The figure shows this procedure for one of the clauses in our 2D Noisy XOR example.
 </p>
 
+<p>
+As in the classic Tsetlin Machine, the output from each clause is processed further by summation and then thresholding to decide the class:
+</p>
 <p align="center">
   <img width="65%" src="https://github.com/olegranmo/blob/blob/master/Recognition.png">
 </p>
-It consists of four positive clauses which represent XOR patterns that must be present in a positive example image (positive features) and four negative clauses which represent patterns that will not trigger a positive image classification (negative features). The number of positive and negative clauses is a user-defined parameter. The bit patterns inside each clause are represented by the output of four Tsetlin Automata, one for each bit in a 2x2 filter.
+The above configuration consists of four positive clauses which represent XOR patterns that must be present in a positive example image (positive features) and four negative clauses which represent patterns that will not trigger a positive image classification (negative features). As explained earlier, the bit patterns inside each clause are represented by the output of eight Tsetlin Automata, one for each literal in the 2x2 filter.
 
 ### Learning with the Convolutional Tsetlin Machine
 
