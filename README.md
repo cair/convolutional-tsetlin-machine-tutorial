@@ -107,7 +107,7 @@ In our 2D Noisy XOR example, the Convolutional Tsetlin Machine takes the proposi
 
 #### The Conjunctive Clause
 <p>
-The Convolutional Tsetlin Machine uses conjunctive clauses as filters. A clause is built by ANDing a selection of the available propositional variables <img src="http://latex.codecogs.com/svg.latex?x_{1,1}, x_{2,1}, x_{1,2}, x_{2,2}" border="0"/> and their negations <img src="http://latex.codecogs.com/svg.latex?\lnot{x_{1,1}}, \lnot{x_{2,1}}, \lnot{x_{1,2}}, \lnot{x_{2,2}}" border="0"/> (the propositional variables and their negations are referred to as literals). The clause <img src="http://latex.codecogs.com/svg.latex?C = {x_{1,1}} \land {x_{2,2}} \land  \lnot{x_{1,2}} \land \lnot{x_{1,2}}" border="0"/>, for instance, evaluates to 1 for image patches with bit values:
+A conjunctive clause is built by ANDing a selection of the available propositional variables <img src="http://latex.codecogs.com/svg.latex?x_{1,1}, x_{2,1}, x_{1,2}, x_{2,2}" border="0"/> and their negations <img src="http://latex.codecogs.com/svg.latex?\lnot{x_{1,1}}, \lnot{x_{2,1}}, \lnot{x_{1,2}}, \lnot{x_{2,2}}" border="0"/> . The clause <img src="http://latex.codecogs.com/svg.latex?C = {x_{1,1}} \land {x_{2,2}} \land  \lnot{x_{1,2}} \land \lnot{x_{1,2}}" border="0"/>, for instance, evaluates to 1 for image patches with bit values:
 </p>
 <p align="center">
   <img width="10%" src="https://github.com/olegranmo/blob/blob/master/y_1a.png">
