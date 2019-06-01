@@ -6,7 +6,7 @@ The below figure depicts training and test accuracy for the Convolutional Tsetli
 ![Figure 4](https://github.com/olegranmo/blob/blob/master/performance_by_epoch_MNIST.png)
 Test accuracy peaks at 99.50% after 168 epochs and 99.51% after 327 epochs. Further, it climbs quickly in the first epochs, passing 99% already in epoch 2. Training accuracy approaches 100%. 
 
-## Step-by-Step Walkthrough of Inference
+## Tutorial on the Convolutional Tsetlin Machine
 
 ### Example Problem: 2D Noisy XOR
 
