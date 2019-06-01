@@ -164,6 +164,22 @@ Consider the 3x3 image shown below. The filter represented by the second positiv
 </p>
 Thus, the Tsetlin Machine’s combined output is 1. Learning of feature detectors proceeds as follows: With the CTM’s threshold value set to T = 2, the probability of feedback is (T-v)/(2T)=0.25, and thus learning taking place, which pushes the CTM’s output v towards T=2. Note that Type I feedback reinforces true positive output and reduces false negative output whereas Type II feedback reduces false positive output.
 
+#### Feedback Type I
+
+<p align="center">
+  <img width="90%" src="https://github.com/olegranmo/blob/blob/master/Example_Configuration_4a.png">
+</p>
+
+<p align="center">
+  <img width="90%" src="https://github.com/olegranmo/blob/blob/master/Example_Configuration_2a.png">
+</p>
+
+#### Feedback Type II
+
+<p align="center">
+  <img width="90%" src="https://github.com/olegranmo/blob/blob/master/Example_Configuration_3a.png">
+</p>
+
 ### Goal State
 A subsequent state of the CTM is shown below.
 <p align="center">
