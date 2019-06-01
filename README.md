@@ -116,7 +116,7 @@ and to 0 for other image patches.
 
 #### The Tsetlin Automata Team for Composing Clauses
 <p>
-Each clause of the Convolutional Tsetlin Machine is composed by a team of Tsetlin Automata. These decide which literals are to be Excluded from the clause and which are to be Included. There are one Tsetlin Automaton per literal, deciding whether its literal should be Excluded or Included:
+Each clause of the Convolutional Tsetlin Machine is composed by a team of Tsetlin Automata. These decide which literals are to be Excluded from the clause and which are to be Included. There are one Tsetlin Automaton per literal, deciding upon its inclusion:
 <p>
 <p align="center">
   <img width="90%" src="https://github.com/olegranmo/blob/blob/master/Example_Configuration_1a.png">
