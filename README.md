@@ -1,11 +1,6 @@
 # The Convolutional Tsetlin Machine (under construction)
 The Convolutional Tsetlin Machine learns interpretable filters using propositional formulae. The propositional formulae are composed by a collective of Tsetlin Automata coordinated through a game. The Convolutional Tsetlin Machine is an interpretable alternative to convolutional neural networks.
 
-## Learning Behaviour
-The below figure depicts training and test accuracy for the Convolutional Tsetlin Machine on MNIST, epoch-by-epoch, in a single run. 
-![Figure 4](https://github.com/olegranmo/blob/blob/master/performance_by_epoch_MNIST.png)
-Test accuracy peaks at 99.50% after 168 epochs and 99.51% after 327 epochs. Further, it climbs quickly in the first epochs, passing 99% already in epoch 2. Training accuracy approaches 100%. 
-
 ## Tutorial on the Convolutional Tsetlin Machine
 
 ### Example Problem: 2D Noisy XOR
@@ -235,6 +230,11 @@ Note that there are now two positive clauses which detect their pattern in the t
 ## Demo
 
 Coming soon.
+
+## Learning Behaviour
+The below figure depicts training and test accuracy for the Convolutional Tsetlin Machine on MNIST, epoch-by-epoch, in a single run. 
+![Figure 4](https://github.com/olegranmo/blob/blob/master/performance_by_epoch_MNIST.png)
+Test accuracy peaks at 99.50% after 168 epochs and 99.51% after 327 epochs. Further, it climbs quickly in the first epochs, passing 99% already in epoch 2. Training accuracy approaches 100%. 
 
 ## Citation
 
