@@ -203,11 +203,12 @@ To follow the flow of the example let us consider Type Ib feedback first. The th
 <p align="center">
   <img width="90%" src="https://github.com/olegranmo/blob/blob/master/Example_Configuration_4a.png">
 </p>
+<p>
 One of the three clauses should have output 1. The goal of Type Ib feedback is to make at least one of the three clauses reorganize to output 1 instead. This is achieved by penalizing all Include actions and rewarding all Exclude actions of the afflicted clauses. However, for many problems, applying Type Ib with full force will be too disruptive, erasing the patterns captured by the clauses too quickly. Therefore, the impact of Type Ib feedback is reduced by a factor s. That is, each Tsetlin Automaton is not deterministically penalized/rewarded, but stochastically with probability:
-<p align="center">
-<img src="http://latex.codecogs.com/svg.latex?\frac{1}{s}" border="0"/>
 </p>
-
+<p align="center">
+<img src="http://latex.codecogs.com/svg.latex?\frac{1}{s}" border="0"/>.
+</p>
 
 ##### Feedback Type Ia
 
@@ -232,6 +233,8 @@ A subsequent state of the CTM is shown below.
 Note that there are now two positive clauses which detect their pattern in the top-right corner patch. The combined output of all clauses is 2; thus, no further learning is necessary for the detection of the XOR pattern in this patch. Also, the location of the occurrence of each pattern is included. The location information uses a bit representation as follows: Suppose an XOR pattern occurs at the three X-coordinates 1, 4, and 6. For the corresponding binary location representation, these coordinates are considered thresholds: If a coordinate is greater than a threshold, then the corresponding bit in the binary representation will be 0; otherwise, it is set to 1. Thus, the representation of the X-coordinates 1, 4, and 6 will be ‘111’, ‘011’ and ‘001’, respectively. These representations of the location of 2x2 patterns are also learned by TAs.
 
 ## Demo
+
+Coming soon.
 
 ## Citation
 
