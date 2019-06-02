@@ -194,16 +194,10 @@ Thus, the Convolutional Tsetlin Machine’s combined output is v=1. Learning of 
 Type I feedback reinforces true positive output and reduces false negative output, that is, it makes the Convolutional Tsetlin Machine output 1 when it should output 1. Feedback Type I subdivides into Type Ia and Type Ib feedback. Type Ia feedback is given when a clause outputs 1, while Type 1b feedback is given when a clause outputs 0.
 </p>
 
-##### Feedback Type Ia
-
-<p>
-Let us consider Type Ia feedback first. 
-</p> 
-
 ##### Feedback Type Ib
 
 <p>
-Let us now consider Type Ib feedback first. The three positive clauses that capture the overrepresented sub-pattern of y=1 all outputs 0. Here is one of them: 
+Let us for the sake of the example flow consider Type Ib feedback first. The three positive clauses that capture the overrepresented sub-pattern of y=1 all outputs 0. Here is one of them: 
 </p> 
 
 <p align="center">
@@ -215,6 +209,11 @@ One of the three clauses should have output 1, and Type Ib feedback reinforces t
 <img src="http://latex.codecogs.com/svg.latex?\frac{1}{s}" border="0"/>
 </p>
 
+##### Feedback Type Ia
+
+<p>
+Let us now consider Type Ia feedback. Type Ia feedback reinforces patterns when they are recognized. That is, Type Ia feedback is given to clauses that output 0. In all brevity, each propositional variable of value 1 in the selected image patch reinforces Include actions, while propositional variables of value 0 reinforces Exclude actions. 
+</p> 
 <p align="center">
   <img width="90%" src="https://github.com/olegranmo/blob/blob/master/Example_Configuration_2a.png">
 </p>
