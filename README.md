@@ -236,7 +236,16 @@ Eventually, the literals of value 1 for the underrepresented pattern starts to g
 
 #### Feedback Type II
 
-To further stimulate the capability of clauses to distinguish between class y=0 and class y=1, Feedback Type II is introduced.
+Feedback Type II further stimulates the capability of positive clauses to distinguish between class y=0 and class y=1. Type II Feedback is activated for input images of class y=0. The clause that we just considered will sometimes also recognize patterns of class y=0. By only including a single literal, the pattern is too loosely specified. When a positive clause outputs 1, Type II Feedback is activated to combat false positive output. Again we randomly select one of the image patches that made the clause evaluate to 1. To make the clause eventually output 0 instead for this particular pattern, all Tsetlin Automata whose associated literal is of value 0 are penalized!
+
+By the combined effect of Type Ia and Type II feedback, the clause becomes sufficiently strict:
+<p align="center">
+  <img width="90%" src="https://github.com/olegranmo/blob/blob/master/Example_Configuration_1a.png">
+</p>
+
+The Convolutional Tsetlin Machine is now in its goal state, stable in a Nash Equilibrium.
+
+<b>Remark.</b> All of the above operations are for positive clauses.  For negative clauses, Type I feedback is simply replaced with Type II feedback and vice versa!
 
 ### Goal State and Nash Equilibrium
 A subsequent state of the CTM is shown below.
