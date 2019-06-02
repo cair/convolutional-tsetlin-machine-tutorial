@@ -221,12 +221,14 @@ As seen, due to the persistent application of Type Ib feedback, all actions are 
 </p>
 
 <p>
- Type Ia feedback reinforces patterns when they are recognized. That is, Type Ia feedback is given to clauses that output 1. One of the image patches that made the clause evaluate to 1 is first randomly selected. It is the values of the corresponding propositional variables <img src="http://latex.codecogs.com/svg.latex?x_{1,1}, x_{2,1}, x_{1,2}, x_{2,2}" border="0"/> and their negations <img src="http://latex.codecogs.com/svg.latex?\lnot{x_{1,1}}, \lnot{x_{2,1}}, \lnot{x_{1,2}}, \lnot{x_{2,2}}" border="0"/> (the literals) that control Type Ia feedback. In all brevity, each literal of value 1 in the selected image patch reinforces Include actions, while literals of value 0 reinforces Exclude actions. 
+Type Ia feedback reinforces patterns when they are recognized. That is, Type Ia feedback is given to clauses that output 1. One of the image patches that made the clause evaluate to 1 is first randomly selected. It is the values of the corresponding propositional variables <img src="http://latex.codecogs.com/svg.latex?x_{1,1}, x_{2,1}, x_{1,2}, x_{2,2}" border="0"/> and their negations <img src="http://latex.codecogs.com/svg.latex?\lnot{x_{1,1}}, \lnot{x_{2,1}}, \lnot{x_{1,2}}, \lnot{x_{2,2}}" border="0"/> (the literals) that control Type Ia feedback. In all brevity, each literal of value 1 in the selected image patch reinforces Include actions (penalized Exclude and rewards Include), while literals of value 0 reinforces Exclude actions (rewards Exclude and penalizes Include). 
 </p>
 
 <p>
-As an example, each time the underrepresented pattern appears in an image, the Tsetlin Automata associated with literals of value 1 are rewarded for Include actions and penalized for Exclude actions. Conversely, 
+As an example, each time the underrepresented pattern appears in an image, the Tsetlin Automata associated with literals of value 1 are rewarded for Include actions and penalized for Exclude actions. Conversely, the Tsetlin Automata associated with literals of value 0 are rewarded for Exclude actions and penalized for Includue actions.
 </p>
+
+Eventually, the literals of value 1 for the underrepresented pattern starts to gradually be included in the clause:
 
 <p align="center">
   <img width="90%" src="https://github.com/olegranmo/blob/blob/master/Example_Configuration_3a.png">
@@ -234,9 +236,7 @@ As an example, each time the underrepresented pattern appears in an image, the T
 
 #### Feedback Type II
 
-<p align="center">
-  <img width="90%" src="https://github.com/olegranmo/blob/blob/master/Example_Configuration_3a.png">
-</p>
+To further stimulate the capability of clauses to distinguish between class y=0 and class y=1, Feedback Type II is introduced.
 
 ### Goal State and Nash Equilibrium
 A subsequent state of the CTM is shown below.
