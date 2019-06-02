@@ -163,7 +163,7 @@ The above configuration consists of four positive clauses which represent XOR pa
 <p>
 Each clause can be seen as a resource for representing patterns. With limited resources, it is critical to allocate the resources wisely. The Convolutional Tsetlin Machine seeks to allocate clauses uniformly among the crucial patterns in the dataset. This is achieved with a threshold T. That is, each time the outputs of the clauses are summed up, this threshold is the target value for the summation. For inputs of class y=0 the target value is -T and for inputs of class y=1 the target value is T. 
 </p>
-<p>The resources are allocated by controlling the intensity of the bandit learning feedback cycle. In brief, the feedback cycle is intensified the further away from the target value the clause output is, and comes to a complete standstill when the target value is reached. Feedback intensity is modelled as the probability of activating each clause. For input of class y=0, the probability of activating a clause is:
+<p>The resources are allocated by controlling the intensity of the bandit learning feedback cycle. In brief, the feedback cycle is intensified the further away from the target value the clause output is, and comes to a complete standstill when the target value is reached. Let v denote the summed up clause output. Feedback intensity is modelled as the probability of activating each clause. For input of class y=0, the probability of activating a clause is:
 <p align="center">
 <img src="http://latex.codecogs.com/svg.latex?\frac{T + \mathrm{max}(-T, \mathrm{min}(T, v))}{2T}" border="0"/>
 </p>
@@ -177,10 +177,13 @@ and for input of class y=1, the clause activation probability is:
   <b>Remark.</b> A larger T (with a corresponding increase in the number of clauses) makes the learning more robust. This is because more clauses are involved in learning each specific pattern, introducing an ensemble effect.
 </p>
 <p>
-Consider the 3x3 image shown below. The filter represented by the second positive clause matches the patch in the top-right corner of the image and it is the only clause with output 1; similarly, none of the negative clauses respond since their patterns do not match the pattern found in the current patch.
+Now, consider the Convolutional Tsetlin Machine configuration below. The Noisy 2D XOR problem has almost been solved. However, there is an imbalance in the representation of class y=1. Three clauses are allocated to represent one of the sub-patterns, while only a single clause has been allocated to the second pattern. 
 </p>
 <p align="center">
   <img width="105%" src="https://github.com/olegranmo/blob/blob/master/Learning.png">
+</p>
+<p>
+For this example we use the threshold T=2. When an input image of the overrepresented pattern appears, nothing happens because T has been exceeded. However, when an input image of the underrepresented pattern comes along, as shown in the figure, the filter represented by the second positive clause matches the patch in the top-right corner of the image and is the only clause with output 1. similarly, none of the negative clauses respond since their patterns do not match the pattern found in the current patch.
 </p>
 <p>
 Thus, the Tsetlin Machine’s combined output is 1. Learning of feature detectors proceeds as follows: With the CTM’s threshold value set to T = 2, the probability of feedback is (T-v)/(2T)=0.25, and thus learning taking place, which pushes the CTM’s output v towards T=2. Note that Type I feedback reinforces true positive output and reduces false negative output whereas Type II feedback reduces false positive output.
