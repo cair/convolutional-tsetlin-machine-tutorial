@@ -204,6 +204,7 @@ One of the three clauses should have output 1. The goal of Type Ib feedback is t
 <p align="center">
 <img src="http://latex.codecogs.com/svg.latex?\frac{1}{s}" border="0"/>.
 </p>
+Additionally, s combats overfitting, because a low s forces focusing on the main patterns. The underlying noise is "forgotten" by the persistent reinforcment of Exclude actions performed by Type Ib feedback.
 
 ##### Feedback Type Ia
 
