@@ -165,13 +165,13 @@ Each clause can be seen as a resource for representing patterns. With limited re
 </p>
 <p>The resources are allocated by controlling the intensity of the bandit learning feedback cycle. In brief, the feedback cycle is intensified the further away from the target value the clause output is, and comes to a complete standstill when the target value is reached. Feedback intensity is modelled as the probability of activating each clause. For input of class y=0, the probability of activating a clause is:
 <p align="center">
-<img src="http://latex.codecogs.com/svg.latex?\mathbf{X} = [x_{1,1}, x_{2,1}, x_{1,2}, x_{2,2}]" border="0"/>
+<img src="http://latex.codecogs.com/svg.latex?\frac{T + \mathrm{max}(-T, \mathrm{min}(T, v))}{2T}" border="0"/>
 </p>
 <p>
 and for input of class y=1, the clause activation probability is:
 </p>
 <p align="center">
-<img src="http://latex.codecogs.com/svg.latex?\mathbf{X} = [x_{1,1}, x_{2,1}, x_{1,2}, x_{2,2}]" border="0"/>
+<img src="http://latex.codecogs.com/svg.latex?\frac{T - \mathrm{max}(-T, \mathrm{min}(T, v))}{2T}" border="0"/>
 </p>
 <p>
   <b>Remark.</b> A larger T (with a corresponding increase in the number of clauses) makes the learning more robust. This is because more clauses are involved in learning each specific pattern, introducing an ensemble effect.
