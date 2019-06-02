@@ -225,7 +225,7 @@ This happens because Type Ib feedback is applied persistently every time the und
 </p>
 
 <p>
-As seen, due to the persistent application of Type Ib feedback, all actions are now Exclude and the clause outputs 1 for any pattern. For this particular clause, all of the propositional variables were initially in conflict with the underrepresented pattern. Therefore, they all had to be excluded. We are now ready to introduce Feedback Type Ia.
+As seen, due to the persistent application of Type Ib feedback, all actions are now Exclude and the clause outputs 1 for any pattern. For this particular clause, all of the propositional variables that were included initially were in conflict with the underrepresented pattern. Therefore, they all had to be excluded to prepare the clause for learning the underrepresented pattern. We are now ready to introduce Feedback Type Ia.
 </p>
 
 <p>
