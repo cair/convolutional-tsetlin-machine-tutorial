@@ -204,15 +204,24 @@ One of the three clauses should have output 1. The goal of Type Ib feedback is t
 <p align="center">
 <img src="http://latex.codecogs.com/svg.latex?\frac{1}{s}" border="0"/>.
 </p>
-Additionally, s combats overfitting, because a low s forces focusing on the main patterns. The underlying noise is "forgotten" by the persistent reinforcment of Exclude actions performed by Type Ib feedback.
+Additionally, s combats overfitting, because a smaller s forces focusing on the main patterns. The underlying noise is "forgotten" by the persistent reinforcment of Exclude actions performed by Type Ib feedback. A larger s, on the other hand, provides finer patterns.
 
 ##### Feedback Type Ia
 
 <p>
-Let us now consider Type Ia feedback. Type Ia feedback reinforces patterns when they are recognized. That is, Type Ia feedback is given to clauses that output 0. In all brevity, each propositional variable of value 1 in the selected image patch reinforces Include actions, while propositional variables of value 0 reinforces Exclude actions. 
+Let us now consider Type Ia feedback. Eventually, the Type Ib feedback makes one of the clauses recognize the underrepresented pattern. This happens because Type Ib feedback is applied persistently every time the underrepresented patterns appear in an image, while the overrepresented pattern causes no change at all.  Exclude actions are reinforced, and simultaneously the opposite Include action is suppressed. Sooner or later, one of the three clauses will start to recognize the underrepresented pattern. Assume the following clause is the first one:
 </p> 
+
 <p align="center">
   <img width="90%" src="https://github.com/olegranmo/blob/blob/master/Example_Configuration_2a.png">
+</p>
+
+<p>
+As seen, due to the persistent application of Type Ib feedback, all actions are now Exclude and the clause outputs 1 for any pattern. For this particular example, we need to go this far before the clause outputs 1, and we are now ready to introduce Feedback Type Ia.
+</p>
+
+<p>
+ Type Ia feedback reinforces patterns when they are recognized. That is, Type Ia feedback is given to clauses that output 0. In all brevity, each propositional variable of value 1 in the selected image patch reinforces Include actions, while propositional variables of value 0 reinforces Exclude actions. 
 </p>
 
 #### Feedback Type II
