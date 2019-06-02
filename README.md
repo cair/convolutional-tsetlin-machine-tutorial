@@ -158,7 +158,13 @@ The above configuration consists of four positive clauses which represent XOR pa
 
 ### Learning with the Convolutional Tsetlin Machine
 
-Consider the 3x3 image shown below. The filter represented by the second positive clause matches the patch in the top-right corner of the image and it is the only clause with output 1; similarly, none of the negative clauses respond since their patterns do not match the pattern found in the current patch 
+#### Allocation of Pattern Representation Resources
+
+<p>
+Each clause can be seen as a resource for representing patterns. With limited resources, it is critical to allocate the resources wisely. The Convolutional Tsetlin Machine seeks to allocate clauses uniformly among the crucial patterns in the dataset. This is achieved with a threshold T. Each time the outputs of the clauses are summed up, this threshold is the target value for the summation. For inputs of class y=0 the target value is -T and for inputs of class y=1 the target value is T.
+</p>
+
+Consider the 3x3 image shown below. The filter represented by the second positive clause matches the patch in the top-right corner of the image and it is the only clause with output 1; similarly, none of the negative clauses respond since their patterns do not match the pattern found in the current patch.  
 <p align="center">
   <img width="105%" src="https://github.com/olegranmo/blob/blob/master/Learning.png">
 </p>
