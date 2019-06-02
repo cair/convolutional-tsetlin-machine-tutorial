@@ -230,7 +230,9 @@ Type Ia feedback reinforces patterns when they are recognized. That is, Type Ia 
 As an example, each time the underrepresented pattern appears in an image, the Tsetlin Automata associated with literals of value 1 are rewarded for Include actions and penalized for Exclude actions. Conversely, the Tsetlin Automata associated with literals of value 0 are rewarded for Exclude actions and penalized for Includue actions.
 </p>
 
+<p>
 Eventually, the literals of value 1 for the underrepresented pattern starts to gradually be included in the clause:
+</p>
 
 <p align="center">
   <img width="90%" src="https://github.com/olegranmo/blob/blob/master/Example_Configuration_3a.png">
@@ -238,23 +240,31 @@ Eventually, the literals of value 1 for the underrepresented pattern starts to g
 
 #### Feedback Type II
 
+<p>
 Feedback Type II further stimulates the capability of positive clauses to distinguish between class y=0 and class y=1. Type II Feedback is activated for input images of class y=0. The clause that we just considered will sometimes also recognize patterns of class y=0. By only including a single literal, the pattern is too loosely specified. When a positive clause outputs 1, Type II Feedback is activated to combat false positive output. Again we randomly select one of the image patches that made the clause evaluate to 1. To make the clause eventually output 0 instead for this particular pattern, all Tsetlin Automata whose associated literal is of value 0 are penalized!
+</p>
 
 By the combined effect of Type Ia and Type II feedback, the clause becomes sufficiently strict:
 <p align="center">
   <img width="90%" src="https://github.com/olegranmo/blob/blob/master/Example_Configuration_1a.png">
 </p>
 
-The Convolutional Tsetlin Machine is now in its goal state, stable in a Nash Equilibrium.
-
 <b>Remark.</b> All of the above operations are for positive clauses.  For negative clauses, Type I feedback is simply replaced with Type II feedback and vice versa!
 
 ### Goal State and Nash Equilibrium
-A subsequent state of the CTM is shown below.
+<p>
+The Convolutional Tsetlin Machine is now in its goal state, stable in a Nash Equilibrium. That is, no single Tsetlin Automaton will befit from changing its action:
+</p>
+
 <p align="center">
   <img width="65%" src="https://github.com/olegranmo/blob/blob/master/Goal_State.png">
 </p>
-Note that there are now two positive clauses which detect their pattern in the top-right corner patch. The combined output of all clauses is 2; thus, no further learning is necessary for the detection of the XOR pattern in this patch. Also, the location of the occurrence of each pattern is included. The location information uses a bit representation as follows: Suppose an XOR pattern occurs at the three X-coordinates 1, 4, and 6. For the corresponding binary location representation, these coordinates are considered thresholds: If a coordinate is greater than a threshold, then the corresponding bit in the binary representation will be 0; otherwise, it is set to 1. Thus, the representation of the X-coordinates 1, 4, and 6 will be ‘111’, ‘011’ and ‘001’, respectively. These representations of the location of 2x2 patterns are also learned by TAs.
+
+<p>
+Note that there are now two positive clauses which detect their pattern in the top-right corner patch. The combined output of all clauses is 2; thus, no further learning is necessary for the detection of the XOR pattern in this patch.
+</p>
+
+The above example Nash Equilibria is a simple one, happening when all the patterns are perfectly classified and the requirement of the clause sum reaching T=2 has been met. The Nash Equilibria of the Convolutional Tsetlin Machine also balance false negative against false positive classifications, while combating overfitting. This happens when Type Ia, Type Ib and Type II feedback are in balance.
 
 ## Demo
 
