@@ -203,7 +203,7 @@ To follow the flow of the example let us consider Type Ib feedback first. The th
 <p align="center">
   <img width="90%" src="https://github.com/olegranmo/blob/blob/master/Example_Configuration_4a.png">
 </p>
-One of the three clauses should have output 1, and Type Ib feedback reinforces this by penalizing all Include actions and rewarding all Exclude actions. For each Tsetlin Automaton, this happens with probability:
+One of the three clauses should have output 1. The goal of Type Ib feedback is to make at least one of the three clauses reorganize to output 1 instead. This is achieved by penalizing all Include actions and rewarding all Exclude actions of the afflicted clauses. However, for many problems, applying Type Ib with full force will be too disruptive, erasing the patterns captured by the clauses too quickly. Therefore, the impact of Type Ib feedback is reduced by a factor s. That is, each Tsetlin Automaton is not deterministically penalized/rewarded, but stochastically with probability:
 <p align="center">
 <img src="http://latex.codecogs.com/svg.latex?\frac{1}{s}" border="0"/>
 </p>
