@@ -161,7 +161,12 @@ The above configuration consists of four positive clauses which represent XOR pa
 #### Allocation of Pattern Representation Resources
 
 <p>
-Each clause can be seen as a resource for representing patterns. With limited resources, it is critical to allocate the resources wisely. The Convolutional Tsetlin Machine seeks to allocate clauses uniformly among the crucial patterns in the dataset. This is achieved with a threshold T. Each time the outputs of the clauses are summed up, this threshold is the target value for the summation. For inputs of class y=0 the target value is -T and for inputs of class y=1 the target value is T.
+Each clause can be seen as a resource for representing patterns. With limited resources, it is critical to allocate the resources wisely. The Convolutional Tsetlin Machine seeks to allocate clauses uniformly among the crucial patterns in the dataset. This is achieved with a threshold T. That is, each time the outputs of the clauses are summed up, this threshold is the target value for the summation. For inputs of class y=0 the target value is -T and for inputs of class y=1 the target value is T.
+</p>
+<p>The resources are allocated by controlling the intensity of the bandit learning feedback cycle. In brief, the feedback cycle is intensified the further away from the target value the clause output is, and comes to a complete standstill when the target value is reached. Feedback intensity is modelled as the probability of activating each clause. For input of class y=0, the probability of activating a clause is:
+  
+and for input of class y=1, the clause activation probability is:
+
 </p>
 
 Consider the 3x3 image shown below. The filter represented by the second positive clause matches the patch in the top-right corner of the image and it is the only clause with output 1; similarly, none of the negative clauses respond since their patterns do not match the pattern found in the current patch.  
