@@ -197,17 +197,17 @@ Type I feedback reinforces true positive output and reduces false negative outpu
 ##### Feedback Type Ib
 
 <p>
-Let us for the sake of the example flow consider Type Ib feedback first. The three positive clauses that capture the overrepresented sub-pattern of y=1 all outputs 0. Here is one of them: 
+To follow the flow of the example let us consider Type Ib feedback first. The three positive clauses that capture the overrepresented sub-pattern of y=1 all outputs 0. Here is one of them: 
 </p> 
 
 <p align="center">
   <img width="90%" src="https://github.com/olegranmo/blob/blob/master/Example_Configuration_4a.png">
 </p>
-
-One of the three clauses should have output 1, and Type Ib feedback reinforces this by penalizing Include actions and rewarding Exclude actions with probability:
+One of the three clauses should have output 1, and Type Ib feedback reinforces this by penalizing all Include actions and rewarding all Exclude actions. For each Tsetlin Automaton, this happens with probability:
 <p align="center">
 <img src="http://latex.codecogs.com/svg.latex?\frac{1}{s}" border="0"/>
 </p>
+
 
 ##### Feedback Type Ia
 
