@@ -1,7 +1,7 @@
 # The Convolutional Tsetlin Machine (under construction)
 The Convolutional Tsetlin Machine learns interpretable filters using propositional formulae. The propositional formulae are composed by a collective of Tsetlin Automata coordinated through a game. The Convolutional Tsetlin Machine is an interpretable alternative to convolutional neural networks.
 
-## Tutorial on the Convolutional Tsetlin Machine
+## Tutorial
 
 ### Example Problem: 2D Noisy XOR
 
