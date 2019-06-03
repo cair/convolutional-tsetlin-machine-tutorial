@@ -75,7 +75,7 @@ The Tsetlin Automaton learns by changing state. Each state transition is decided
 
 #### Example Run
 <p>
-The depicted Tsetlin Automaton is in state 3 (marked with a solid black circle). Accordingly, it selects Action 1. Assume this triggers a Penalty from the environment. The Tsetlin Automaton then moves from state 3 to state 4:
+The Tsetlin Automaton depicted above is in state 3 (marked with a solid black circle). Accordingly, it selects Action 1. Assume this triggers a Penalty from the environment. The Tsetlin Automaton then moves from state 3 to state 4:
 </p>
 
 <p align="center">
