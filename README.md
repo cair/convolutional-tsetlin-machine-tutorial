@@ -193,20 +193,20 @@ Thus, the Convolutional Tsetlin Machine’s combined output is v=1. Learning of 
 
 #### Type I Feedback 
 <p>
-Type I feedback reinforces true positive output and reduces false negative output, that is, it makes the Convolutional Tsetlin Machine output 1 when it should output 1. Type I feedback subdivides into Type Ia and Type Ib feedback. Type Ia feedback is given when a clause outputs 1, while Type 1b feedback is given when a clause outputs 0.
+Type I feedback reinforces true positive output and reduces false negative output. That is, it makes the Convolutional Tsetlin Machine output 1 when it should output 1. Type I feedback subdivides into Type Ia and Type Ib feedback. Type Ia feedback is given when a clause outputs 1, while Type 1b feedback is given when a clause outputs 0.
 </p>
 
 ##### Type Ib Feedback
 
 <p>
-In accordance with the flow of the example, let us consider Type Ib feedback first. Further, we consider what happens when the underrepresented pattern of class y=1 appears. The three positive clauses that capture the overrepresented sub-pattern of y=1 then all outputs 0. Here is one of them: 
+In accordance with the flow of the example, let us consider Type Ib feedback first. We consider what happens when the underrepresented sub-pattern appears. The three positive clauses that capture the overrepresented sub-pattern then all outputs 0. Here is one of them: 
 </p> 
 
 <p align="center">
   <img width="90%" src="https://github.com/olegranmo/blob/blob/master/Example_Configuration_4a.png">
 </p>
 <p>
-One of the three clauses should have output 1. The goal of Type Ib feedback is to make at least one of the three clauses reorganize to output 1 instead. This is achieved by penalizing all Include actions and rewarding all Exclude actions of the afflicted clauses. However, for many problems, applying Type Ib with full force will be too disruptive, erasing the patterns captured by the clauses too quickly. Therefore, the impact of Type Ib feedback is reduced by a factor s. That is, each Tsetlin Automaton is not deterministically penalized/rewarded, but stochastically with probability:
+To solve the classification problem, one of the three clauses should output 1. The goal of Type Ib feedback is to make that happen by forcing one of the three clauses to reorganize. This is achieved by penalizing all Include actions and rewarding all Exclude actions of the afflicted clauses. However, for many problems, applying Type Ib with full force will be too disruptive, erasing the patterns captured by the clauses too quickly. Therefore, the impact of Type Ib feedback is reduced by a factor s. That is, each Tsetlin Automaton is not deterministically penalized/rewarded, but stochastically with probability:
 </p>
 <p align="center">
 <img src="http://latex.codecogs.com/svg.latex?\frac{1}{s}" border="0"/>
