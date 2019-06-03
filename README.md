@@ -274,7 +274,7 @@ The Convolutional Tsetlin Machine is now in its goal state, stable in a Nash Equ
 Note that there are now two positive clauses which detect their pattern in the top-right corner patch. The combined output of all clauses is 2; thus, no further learning is necessary for the detection of the XOR pattern in this patch.
 </p>
 
-The above example Nash Equilibria is a simple one, happening when all the patterns are perfectly classified and the requirement of the clause sum reaching T=2 has been met. The Nash Equilibria of the Convolutional Tsetlin Machine also balance false negative against false positive classifications, while combating overfitting. This happens when Type Ia, Type Ib and Type II feedback are in balance.
+The above example Nash Equilibrium is rather simple, happening when all the patterns are perfectly classified and the requirement of the clause sum reaching T=2 has been met. The Nash Equilibria of the Convolutional Tsetlin Machine also balance false negative against false positive classifications, while combating overfitting. This happens when Type Ia, Type Ib and Type II feedback are in balance.
 
 ## Demo
 
