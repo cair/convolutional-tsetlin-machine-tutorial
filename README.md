@@ -185,10 +185,10 @@ Now, consider the Convolutional Tsetlin Machine configuration below. The Noisy 2
   <img width="105%" src="https://github.com/olegranmo/blob/blob/master/Learning.png">
 </p>
 <p>
-For this example I use the threshold T=2. When an input image of the overrepresented pattern appears, nothing happens because T has been exceeded. However, when an input image of the underrepresented pattern comes along, as shown in the figure, the filter represented by the second positive clause matches the patch in the top-right corner of the image and is the only clause with output 1. similarly, none of the negative clauses respond since their patterns do not match the pattern found in the current patch.
+For this example I use the threshold T=2. When an input image of the overrepresented sub-pattern for class y=1 appears, nothing happens because T is exceeded by the three votes from the matching positive clauses. However, when an input image of the underrepresented sub-pattern comes along, as shown in the figure, only a single clause outputs 1. It is the clause highlighted in the figure that matches the image (upper right patch) and accordingly outputs 1. In this case, none of the negative clauses respond since their patterns do not match the image either.
 </p>
 <p>
-Thus, the Convolutional Tsetlin Machine’s combined output is v=1. Learning of feature detectors proceeds as follows. With the threshold value set to T = 2, the probability of feedback is (T-v)/(2T)=0.25, and thus learning taking place, which pushes the output v towards T=2. This is achieved with what we refer to as Feedback Type I.
+Thus, the Convolutional Tsetlin Machine’s combined output is v=1. Learning of feature detectors proceeds as follows. With the threshold value set to T = 2, the probability of feedback is (T-v)/(2T)=0.25, and thus learning taking place. This pushes the output v towards T=2. We achieve this with what we refer to as Feedback Type I.
 </p>
 
 #### Feedback Type I
