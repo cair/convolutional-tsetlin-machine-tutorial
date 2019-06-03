@@ -188,15 +188,15 @@ Now, consider the Convolutional Tsetlin Machine configuration below. The Noisy 2
 For this example I use the threshold T=2. When an input image of the overrepresented sub-pattern for class y=1 appears, nothing happens because T is exceeded by the three votes from the matching positive clauses. However, when an input image of the underrepresented sub-pattern comes along, as shown in the figure, only a single clause outputs 1. It is the clause highlighted in the figure that matches the image (upper right patch) and accordingly outputs 1. In this case, none of the negative clauses respond since their patterns do not match the image either.
 </p>
 <p>
-Thus, the Convolutional Tsetlin Machine’s combined output is v=1. Learning of feature detectors proceeds as follows. With the threshold value set to T = 2, the probability of feedback is (T-v)/(2T)=0.25, and thus learning taking place. This pushes the output v towards T=2. We achieve this with what we refer to as Feedback Type I.
+Thus, the Convolutional Tsetlin Machine’s combined output is v=1. Learning of feature detectors proceeds as follows. With the threshold value set to T = 2, the probability of feedback is (T-v)/(2T)=0.25, and thus learning taking place. This pushes the output v towards T=2. We achieve this with what we refer to as Type I Feedback.
 </p>
 
-#### Feedback Type I
+#### Type I Feedback 
 <p>
-Type I feedback reinforces true positive output and reduces false negative output, that is, it makes the Convolutional Tsetlin Machine output 1 when it should output 1. Feedback Type I subdivides into Type Ia and Type Ib feedback. Type Ia feedback is given when a clause outputs 1, while Type 1b feedback is given when a clause outputs 0.
+Type I feedback reinforces true positive output and reduces false negative output, that is, it makes the Convolutional Tsetlin Machine output 1 when it should output 1. Type I feedback subdivides into Type Ia and Type Ib feedback. Type Ia feedback is given when a clause outputs 1, while Type 1b feedback is given when a clause outputs 0.
 </p>
 
-##### Feedback Type Ib
+##### Type Ib Feedback
 
 <p>
 To follow the flow of the example let us consider Type Ib feedback first. The three positive clauses that capture the overrepresented sub-pattern of y=1 all outputs 0. Here is one of them: 
@@ -213,7 +213,7 @@ One of the three clauses should have output 1. The goal of Type Ib feedback is t
 </p>
 Additionally, s combats overfitting, because a smaller s forces focusing on the main patterns. The underlying noise is "forgotten" by the persistent reinforcment of Exclude actions performed by Type Ib feedback. A larger s, on the other hand, provides finer patterns.
 
-##### Feedback Type Ia
+##### Type Ia Feedback
 
 <p>
 Let us now consider Type Ia feedback. Eventually, the Type Ib feedback makes one of the clauses recognize the underrepresented pattern in our example:
@@ -248,10 +248,10 @@ Thus, for the above example, the Include action is reinforced for  <img src="htt
   <img width="90%" src="https://github.com/olegranmo/blob/blob/master/Example_Configuration_3a.png">
 </p>
 
-#### Feedback Type II
+#### Type II Feedback 
 
 <p>
-Feedback Type II further stimulates the capability of positive clauses to distinguish between class y=0 and class y=1. Type II Feedback is activated for input images of class y=0. The clause that we just considered will sometimes also recognize patterns of class y=0. By only including a single literal, the pattern is too loosely specified. When a positive clause outputs 1, Type II Feedback is activated to combat false positive output. Again we randomly select one of the image patches that made the clause evaluate to 1. To make the clause eventually output 0 instead for this particular pattern, all Tsetlin Automata whose associated literal is of value 0 are penalized!
+Type II Feedback further stimulates the capability of positive clauses to distinguish between class y=0 and class y=1. Type II feedback is activated for input images of class y=0. The clause that we just considered will sometimes also recognize patterns of class y=0. By only including a single literal, the pattern is too loosely specified. When a positive clause outputs 1, Type II feedback is activated to combat false positive output. Again we randomly select one of the image patches that made the clause evaluate to 1. To make the clause eventually output 0 instead for this particular pattern, all Tsetlin Automata whose associated literal is of value 0 are penalized!
 </p>
 
 By the combined effect of Type Ia and Type II feedback, the clause becomes sufficiently strict:
