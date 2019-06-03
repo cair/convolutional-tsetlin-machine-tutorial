@@ -149,8 +149,7 @@ In our example architecture, there are eight conjunctive clauses:
 <p align="center">
   <img width="65%" src="https://github.com/olegranmo/blob/blob/master/Recognition.png">
 </p>
-The above configuration consists of four positive clauses which represent XOR patterns that must be present in images from class y=1. It also consists of four negative clauses which represent patterns from clause y=0.  Observe that each clause has been annoted with the positional information it has incorporated, using thresholds on the x and y coordinates.
-Our example clause is highlighted in the figure. As explained earlier, the bit patterns inside each clause are represented by the output of eight Tsetlin Automata, one for each literal in the 2x2 filter. As in the classic Tsetlin Machine, the output from each clause is processed further by summation and then thresholding to decide the class.
+The above configuration consists of four positive clauses which represent XOR patterns that must be present in images of class y=1. It also consists of four negative clauses which represent patterns associated with class y=0.  Observe that each clause has been annoted with the positional information it has incorporated, using thresholds on the x and y coordinates. As explained earlier, the bit patterns inside each clause are represented by the output of eight corresponding Tsetlin Automata, one for each literal in the 2x2 filter. Our example clause is highlighted in the figure, outputing 1 due to matching the input image. As in the classic Tsetlin Machine, the output from each clause is processed further by summation and then thresholding to decide the class.
 
 ### Learning with the Convolutional Tsetlin Machine
 
