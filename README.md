@@ -25,7 +25,7 @@ A horizontal line is associated with class 0, while a diagonal line is associate
 For this example, I consider convolution with 2x2 filters. A convolutional learning mechanism employing 2x2 filters must learn the four patterns above as well as which class they belong to. Note that due to the XOR-relation, linear classifiers will face difficulties handling this task.
 </p>
 <p>
-A 3x3 image contains four distinct 2x2 patches, located at different coordinates (x, y) within the image. One is located in the upper left of the image, at position (1, 1), another at position (2, 1), a third at position (1, 2), and the fourth at position (2, 2). The content of each patch is modelled with four propositional variables <img src="http://latex.codecogs.com/svg.latex?\mathbf{X} = [x_{1,1}, x_{2,1}, x_{1,2}, x_{2,2}]" border="0"/>. The coordinates of the variables (lower index) are the relative positions of the variables within the patch: 
+A 3x3 image contains four distinct 2x2 patches, located at different coordinates (x, y) within the image. One is located in the upper left corner of the image, at position (1, 1), another at position (2, 1), a third at position (1, 2), and the fourth at position (2, 2). The content of each patch is modelled with four propositional variables <img src="http://latex.codecogs.com/svg.latex?\mathbf{X} = [x_{1,1}, x_{2,1}, x_{1,2}, x_{2,2}]" border="0"/>. The coordinates of the variables (lower index) are the relative positions of the variables within the patch: 
 <p align="center">
   <img width="10%" src="https://github.com/olegranmo/blob/blob/master/Filter.png">
 </p>
