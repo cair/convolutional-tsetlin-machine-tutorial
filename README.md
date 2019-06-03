@@ -158,7 +158,7 @@ Our example clause is highlighted in the figure, outputing 1 due to matching the
 
 ### Learning with the Convolutional Tsetlin Machine
 
-We are now ready to address how the Convolutional Tsetlin Machine learns. For the sake of clarity, we will first consider learning of positive clauses, returning to the negative clauses towards the end of the section.
+We are now ready to address how the Convolutional Tsetlin Machine learns. For the sake of clarity, I will first consider learning of positive clauses, returning to the negative clauses towards the end of the section.
 
 #### Allocation of Pattern Representation Resources
 
