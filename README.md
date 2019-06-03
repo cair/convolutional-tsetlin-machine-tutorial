@@ -216,13 +216,13 @@ Additionally, this mechanism combats overfitting, because a smaller s forces foc
 ##### Type Ia Feedback
 
 <p>
-Let us now consider Type Ia feedback. Eventually, the Type Ib feedback makes one of the clauses recognize the underrepresented pattern in our example:
+Let us now consider Type Ia feedback. Eventually, Type Ib feedback makes one of the clauses recognize the underrepresented pattern in our example:
 </p> 
 <p align="center">
   <img width="10%" src="https://github.com/olegranmo/blob/blob/master/y_1a.png">
 </p>
 <p>
-This happens because Type Ib feedback is applied persistently every time the underrepresented sub-pattern appears in an image, while the overrepresented sub-pattern causes no change at all.  Exclude actions are reinforced, while Include actions are suppressed. Sooner or later, one of the three clauses will start to recognize the underrepresented pattern. Assume the following clause is the first one:
+This happens because Type Ib feedback is applied persistently every time the underrepresented sub-pattern appears in an image, while the overrepresented sub-pattern causes no change at all.  Exclude actions are reinforced, while Include actions are suppressed. Thus, sooner or later, one of the three clauses will start to recognize the underrepresented pattern. Assume the following clause is the first one:
 </p> 
 
 <p align="center">
@@ -230,7 +230,7 @@ This happens because Type Ib feedback is applied persistently every time the und
 </p>
 
 <p>
-As seen, due to the persistent application of Type Ib feedback, all actions are now Exclude and the clause outputs 1 for any pattern. For this particular clause, all of the propositional variables that were included initially were in conflict with the underrepresented pattern. Therefore, they all had to be excluded to prepare the clause for learning the underrepresented pattern. We are now ready to introduce Feedback Type Ia.
+As seen, due to the repeated application of Type Ib feedback, all actions are now Exclude and the clause outputs 1 for any pattern. For this particular clause, all of the propositional variables that were included initially were in conflict with the underrepresented pattern. Therefore, they all had to be excluded to prepare the clause for learning the underrepresented pattern. We are now ready to introduce Feedback Type Ia.
 </p>
 
 <p>
