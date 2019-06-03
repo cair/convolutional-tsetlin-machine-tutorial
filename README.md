@@ -263,7 +263,7 @@ By the combined effect of Type Ia and Type II feedback, the clause becomes suffi
 
 ### Goal State and Nash Equilibrium
 <p>
-The Convolutional Tsetlin Machine is now in its goal state, stable in a Nash Equilibrium. That is, no single Tsetlin Automaton will befit from changing its action:
+The Convolutional Tsetlin Machine is now in its goal state, stable in a Nash Equilibrium. That is, no single Tsetlin Automaton will benefit from changing its action:
 </p>
 
 <p align="center">
