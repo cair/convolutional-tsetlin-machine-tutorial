@@ -149,7 +149,12 @@ In our example architecture, there are eight conjunctive clauses:
 <p align="center">
   <img width="65%" src="https://github.com/olegranmo/blob/blob/master/Recognition.png">
 </p>
-The above configuration consists of four positive clauses which represent XOR patterns. These are used to recognize images of class y=1. It also consists of four negative clauses which represent patterns associated with class y=0.  Observe that each clause has been annoted with the positional information it has incorporated, using thresholds on the x and y coordinates. As explained earlier, the bit patterns inside each clause have been decided by the eight corresponding Tsetlin Automata, one for each literal in the 2x2 filter. Our example clause is highlighted in the figure, outputing 1 due to matching the input image. Note that some of the other clauses are matching the image content too. However, their positional information is incompatible with the input, so they output 0. As in the classic Tsetlin Machine, the output from each clause is processed further by summation and then thresholding to decide the class. Above, positive clauses outputting 1 are in majority, to the Convolutional Tsetlin Machine assigns class y=1 to the input image. 
+<p>
+The above configuration consists of four positive clauses which represent XOR patterns. These are used to recognize images of class y=1. It also consists of four negative clauses which represent patterns associated with class y=0.  Observe that each clause has been annoted with the positional information it has incorporated, using thresholds on the x and y coordinates. As explained earlier, the bit patterns inside each clause have been decided by the eight corresponding Tsetlin Automata, one for each literal in the 2x2 filter.
+</p>
+<p>
+Our example clause is highlighted in the figure, outputing 1 due to matching the input image. Note that some of the other clauses are matching the image content too. However, their positional information is incompatible with the input, so they output 0. As in the classic Tsetlin Machine, the output from each clause is processed further by summation and then thresholding to decide the class. Above, positive clauses outputting 1 are in majority, so the Convolutional Tsetlin Machine assigns class y=1 to the input image.
+</p>
 
 ### Learning with the Convolutional Tsetlin Machine
 
