@@ -199,7 +199,7 @@ Type I feedback reinforces true positive output and reduces false negative outpu
 ##### Type Ib Feedback
 
 <p>
-In accordance with the flow of the example, let us consider Type Ib feedback first. We further consider what happens when the underrepresented sub-pattern appears. The three positive clauses that capture the overrepresented sub-pattern then all outputs 0. Here is one of them: 
+In accordance with the flow of the example, let us consider Type Ib feedback first. We further consider what happens when the underrepresented sub-pattern appears. The three positive clauses that capture the overrepresented sub-pattern then all output 0. Here is one of them: 
 </p> 
 
 <p align="center">
