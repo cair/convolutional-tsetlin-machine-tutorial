@@ -211,7 +211,7 @@ To balance usage of pattern representation resources, one of the three clauses s
 <p align="center">
 <img src="http://latex.codecogs.com/svg.latex?\frac{1}{s}" border="0"/>
 </p>
-Additionally, s combats overfitting, because a smaller s forces focusing on the main patterns. The underlying noise is "forgotten" by the persistent reinforcment of Exclude actions performed by Type Ib feedback. A larger s, on the other hand, provides finer patterns.
+Additionally, this mechanism combats overfitting, because a smaller s forces focusing on more frequent patterns. In effect, the underlying noise is "forgotten" by the persistent reinforcment of Exclude actions. A larger s, on the other hand, provides finer patterns.
 
 ##### Type Ia Feedback
 
