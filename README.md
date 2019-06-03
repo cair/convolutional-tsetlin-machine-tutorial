@@ -222,7 +222,7 @@ Let us now consider Type Ia feedback. Eventually, the Type Ib feedback makes one
   <img width="10%" src="https://github.com/olegranmo/blob/blob/master/y_1a.png">
 </p>
 <p>
-This happens because Type Ib feedback is applied persistently every time the underrepresented patterns appear in an image, while the overrepresented pattern causes no change at all.  Exclude actions are reinforced, while Include actions are suppressed. Sooner or later, one of the three clauses will start to recognize the underrepresented pattern. Assume the following clause is the first one:
+This happens because Type Ib feedback is applied persistently every time the underrepresented sub-pattern appears in an image, while the overrepresented sub-pattern causes no change at all.  Exclude actions are reinforced, while Include actions are suppressed. Sooner or later, one of the three clauses will start to recognize the underrepresented pattern. Assume the following clause is the first one:
 </p> 
 
 <p align="center">
