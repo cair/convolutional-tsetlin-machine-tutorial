@@ -41,14 +41,14 @@ For the 2D XOR dataset, the patch in the upper right part of the image, at posit
 I will now explain how the Convolutional Tsetlin Machine solves the above pattern recognition task, going through the recognition and learning steps in detail.
 </p>
 
-### The Tsetlin Automaton
-
 <p align="center">
   <img width="20%" src="https://github.com/olegranmo/blob/blob/master/Michael_Lvovitch_Tsetlin.png">
 </p>
 <p align="center">
   <b>Michael Lvovitch Tsetlin (22 September 1924 – 30 May 1966)</b>
 </p>
+
+### The Tsetlin Automaton
 
 <p>
 The Convolutional Tsetlin Machine is based on the Tsetlin Automaton, introduced by M. L. Tsetlin in 1961. The Tsetlin Automaton is one of the pioneering solutions to the well-known multi-armed bandit problem and the first Finite State Learning Automaton.
