@@ -206,7 +206,7 @@ In accordance with the flow of the example, let us consider Type Ib feedback fir
   <img width="90%" src="https://github.com/olegranmo/blob/blob/master/Example_Configuration_4a.png">
 </p>
 <p>
-To balance usage of pattern representation resources, one of the three clauses should output 1. The goal of Type Ib feedback is to make that happen by forcing one of the three clauses to reorganize. This is achieved by penalizing all Include actions and rewarding all Exclude actions of the afflicted clauses. However, for many problems, applying Type Ib feedback with full force will be too disruptive, erasing the patterns captured by the clauses too quickly. Therefore, the impact of Type Ib feedback is reduced by a factor s. That is, each Tsetlin Automaton is not deterministically penalized/rewarded, but stochastically with probability:
+To balance usage of pattern representation resources, one of the three clauses should instead output 1. The goal of Type Ib feedback is to make that happen by forcing one of the three clauses to reorganize. This is achieved by penalizing all Include actions and rewarding all Exclude actions of the afflicted clauses. However, for many problems, applying Type Ib feedback with full force will be too disruptive, erasing the patterns captured by the clauses too quickly. Therefore, the impact of Type Ib feedback is reduced by a factor s. That is, each Tsetlin Automaton is not deterministically penalized/rewarded, but stochastically with probability:
 </p>
 <p align="center">
 <img src="http://latex.codecogs.com/svg.latex?\frac{1}{s}" border="0"/>
