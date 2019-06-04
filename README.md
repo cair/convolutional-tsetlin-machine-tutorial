@@ -86,7 +86,7 @@ At this point, it is quite confident that Action 2 is better than Action 1. Inde
 </p>
 
 <p>
-The above simple learning mechanism has some remarkable properties. It makes the Tsetlin Automaton act predictably, only changing action when switching between the two centre states. This supports stable collectives of many cooperating Tsetlin Automata, taking part in solving more complex problems. Further, the Tsetlin Automaton never stops learning. Therefore, it can adapt to changes in the environment. This helps avoiding getting stuck in local optima.  Finally, the accuracy and speed of learning is controlled by the number of states. By increasing the number of states and learning cycles towards infinity, the Tsetlin Automaton performs the optimal action with probability arbitrarily close to unity. In other words, Tsetlin Automata learning is asymptotically optimal.
+The above simple learning mechanism has some remarkable properties. It makes the Tsetlin Automaton act predictably, only changing action when switching between the two centre states. This supports stable collectives of many cooperating Tsetlin Automata, taking part in solving more complex problems. Further, the Tsetlin Automaton never stops learning. Therefore, it can adapt to changes in the environment, for instance introduced by other Tsetlin Automata.  Finally, the accuracy and speed of learning is controlled by the number of states. By increasing the number of states and learning cycles towards infinity, the Tsetlin Automaton performs the optimal action with probability arbitrarily close to unity. In other words, Tsetlin Automata learning is asymptotically optimal.
 </p>
 
 ### The Architecture of the Convolutional Tsetlin Machine
