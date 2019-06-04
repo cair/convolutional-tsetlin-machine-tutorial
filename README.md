@@ -66,7 +66,7 @@ When the automaton is in states 1-3 (left half) it performs Action 1, and when i
 </p>
 
 <p>
-The Tsetlin Automaton learns by changing state. Each state transition is decided by the feedback from the environment (Penalty or Reward). As shown in the figure above, a Penalty makes the Tsetlin Automaton change state towards the centre, while a Reward makes it change state away from the centre. The farther the Tsetlin Automaton is away from the centre, the more confident it is in the action chosen.
+The Tsetlin Automaton learns by changing state. Each state transition is decided by the feedback from the environment (Penalty or Reward). As shown in the figure above, a Penalty makes the Tsetlin Automaton change state towards the centre, while a Reward makes it change state away from the centre. In effect, the farther the Tsetlin Automaton is away from the centre, the more confident it is in the action chosen.
 </p>
 
 #### Example Run
