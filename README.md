@@ -30,7 +30,7 @@ A 3x3 image contains four distinct 2x2 patches, located at different coordinates
   <img width="10%" src="https://github.com/olegranmo/blob/blob/master/Filter.png">
 </p>
 <p>
-This means that which image bit a propositional variable refers to depends both on the coordinates of the variable within the patch and the position of the patch within the image. As an example, the variable <img src="http://latex.codecogs.com/svg.latex?x_{1,1}" border="0"/> of the upper right patch refers to the bit at position (2, 1) in the 3x3 image. For the 2D XOR dataset, the patch in the upper right part of the image, at position (2, 1), can be used to determine the class of the image, since it contains the discriminating 2D XOR-pattern. 
+This means that which image bit a propositional variable refers to depends both on the coordinates of the variable within the patch and the position of the patch within the image. As an example, the variable <img src="http://latex.codecogs.com/svg.latex?x_{1,1}" border="0"/> of the upper right patch refers to the bit at position (2, 1) in the 3x3 image. Note that it is this patch that can be used to determine the class of the image, since it contains the discriminating 2D XOR-pattern. 
 </p>
 
 <p>
