@@ -159,7 +159,7 @@ We are now ready to address how the Convolutional Tsetlin Machine learns. For th
 #### Allocation of Pattern Representation Resources
 
 <p>
-Each clause can be seen as a resource for representing patterns. With limited resources, it is critical to allocate the resources wisely. The Convolutional Tsetlin Machine seeks to allocate clauses uniformly among the crucial patterns in the dataset. This is achieved with a threshold T. That is, each time the outputs of the clauses are summed up, the threshold T is the target value for the summation. For inputs of class y=0 the target value is -T and for inputs of class y=1 the target value is T. 
+Each clause can be seen as a resource for representing patterns. With limited resources, it is critical to allocate the resources wisely. The Convolutional Tsetlin Machine seeks to allocate clauses uniformly among the crucial patterns in the dataset. This is achieved with a target value T. That is, each time the outputs of the clauses are summed up, T is the target value for the summation. For inputs of class y=0 the target value is -T and for inputs of class y=1 the target value is T. 
 </p>
 <p>The resources are allocated by controlling the intensity of the bandit learning feedback cycle. In brief, the feedback cycle is increasingly intensified the further away the clause output is from the target value T. Conversely, feedback comes to a complete standstill when T is reached or exceeded. Let v denote the summed up clause output. Feedback intensity is modelled as the probability of activating each clause. For input of class y=0, the probability of activating a clause is:
 <p align="center">
@@ -184,10 +184,10 @@ Now, consider the Convolutional Tsetlin Machine configuration below. The Noisy 2
   <img width="105%" src="https://github.com/olegranmo/blob/blob/master/Learning.png">
 </p>
 <p>
-For this example I use the threshold T=2. When an input image of the overrepresented sub-pattern for class y=1 appears, nothing happens because T is exceeded by the three votes from the matching positive clauses. However, when an input image of the underrepresented sub-pattern comes along, as shown in the figure, only a single clause outputs 1. It is the clause highlighted in the figure that matches the image (upper right patch) and accordingly outputs 1. In this case, none of the negative clauses respond since their patterns do not match the image either (being constrained by the positional information).
+For this example I use the target value T=2. When an input image of the overrepresented sub-pattern for class y=1 appears, nothing happens because T is exceeded by the three votes from the matching positive clauses. However, when an input image of the underrepresented sub-pattern comes along, as shown in the figure, only a single clause outputs 1. It is the clause highlighted in the figure that matches the image (upper right patch) and accordingly outputs 1. In this case, none of the negative clauses respond since their patterns do not match the image either (being constrained by the positional information).
 </p>
 <p>
-Thus, the Convolutional Tsetlin Machine’s combined output is v=1. Learning of feature detectors proceeds as follows. With the threshold value set to T=2, the probability of feedback is (T-v)/(2T)=0.25, and thus learning taking place. This pushes the output v towards T=2. We achieve this with what we refer to as Type I feedback.
+Thus, the Convolutional Tsetlin Machine’s combined output is v=1. Learning of feature detectors proceeds as follows. With the target value set to T=2, the probability of feedback is (T-v)/(2T)=0.25, and thus learning taking place. This pushes the output v towards T=2. We achieve this with what we refer to as Type I feedback.
 </p>
 
 #### Type I Feedback 
