@@ -135,7 +135,7 @@ The Convolutional Tsetlin Machine recognizes patterns by first turning the input
 Each conjunctive clause is then evaluated on each patch. For each clause, the outcome for each patch is ORed to produce the output of the clause. The figure shows this procedure for one of the clauses in our 2D Noisy XOR example.
 </p>
 <p>
-To make the clauses location-aware, each patch is further enhanced with its coordinates within the image (see figure). Location awareness may prove useful in applications where both patterns and their location are distinguishing features, e.g. recognition of facial features such as eyes, eyebrows, nose, mouth, etc. in facial expression recognition. These coordinates are incorporated as additional propositional variables in the input vector. However, for the sake of clarity, I will not considere the details of this incorporation here. Instead, I will simply assume that the information on the coordinates already have been incorporated into the clauses.
+To make the clauses location-aware, each patch is further enhanced with its coordinates within the image (see figure). Location awareness may prove useful in applications where both patterns and their location are distinguishing features, e.g. recognition of facial features such as eyes, eyebrows, nose, mouth, etc. in facial expression recognition. These coordinates are incorporated as additional propositional variables in the input vector. However, for the sake of brevity, I will not considere the details of this incorporation here. Instead, I will simply assume that the information on the coordinates already have been incorporated into the clauses.
 </p>
 
 #### Summation and Thresholding Step
