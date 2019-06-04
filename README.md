@@ -197,7 +197,7 @@ Thus, the Convolutional Tsetlin Machine’s combined output is v=1. Learning of 
 
 #### Type I Feedback 
 <p>
-Type I feedback reinforces true positive output and reduces false negative output. That is, it makes the Convolutional Tsetlin Machine output 1 when it should output 1. Type I feedback subdivides into Type Ia and Type Ib feedback. Type Ia feedback is given when a clause outputs 1, while Type 1b feedback is given when a clause outputs 0.
+Type I feedback reinforces true positive output and reduces false negative output. That is, it makes the Convolutional Tsetlin Machine output 1 when it should output 1. Type I feedback subdivides into Type Ia and Type Ib feedback. Type Ia feedback is given when a clause outputs 1, and is the part that reinforces true positive output. Type 1b feedback, on the other hand, is given when a clause outputs 0, combating false negative output.
 </p>
 
 ##### Type Ib Feedback
