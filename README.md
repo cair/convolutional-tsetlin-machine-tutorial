@@ -9,7 +9,7 @@ The Convolutional Tsetlin Machine learns interpretable filters using proposition
 In this tutorial, I will use the 2D Noisy XOR dataset to demonstrate how the Convolutional Tsetlin Machine recognizes patterns and how these patterns are learnt from example images. The 2D Noisy XOR dataset I consider contains 3x3 binary images. Below you see an example image.
 </p>
 <p align="center">
-  <img width="20%" src="https://github.com/olegranmo/blob/blob/master/Example_Image.png">
+  <img width="25%" src="https://github.com/olegranmo/blob/blob/master/Example_Image.png">
 </p>
 
 <p>
