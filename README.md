@@ -220,7 +220,7 @@ Additionally, this mechanism combats overfitting, because a smaller s forces foc
 ##### Type Ia Feedback
 
 <p>
-Let us now consider Type Ia feedback. Eventually, Type Ib feedback makes one of the clauses recognize the underrepresented pattern in our example:
+Let us now consider Type Ia feedback. Eventually, Type Ib feedback makes an additional clause recognize the underrepresented pattern in our example:
 </p> 
 <p align="center">
   <img width="10%" src="https://github.com/olegranmo/blob/blob/master/y_1a.png">
