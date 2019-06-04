@@ -161,7 +161,7 @@ We are now ready to address how the Convolutional Tsetlin Machine learns. For th
 <p>
 Each clause can be seen as a resource for representing patterns. With limited resources, it is critical to allocate the resources wisely. The Convolutional Tsetlin Machine seeks to allocate clauses uniformly among the crucial patterns in the dataset. This is achieved with a target value T. That is, each time the outputs of the clauses are summed up, T is the target value for the summation. For inputs of class y=0 the target value is -T and for inputs of class y=1 the target value is T. 
 </p>
-<p>The resources are allocated by controlling the intensity of the bandit learning feedback cycle. In brief, the feedback cycle is increasingly intensified the further away the clause output is from the target value T. Conversely, feedback comes to a complete standstill when T is reached or exceeded. Let v denote the summed up clause output. Feedback intensity is modelled as the probability of activating each clause. For input of class y=0, the probability of activating a clause is:
+<p>The resources are allocated by controlling the intensity of the bandit learning feedback cycle. In brief, the feedback cycle is increasingly intensified the farther away the clause output is from the target value T. Conversely, feedback comes to a complete standstill when T is reached or exceeded. Let v denote the summed up clause output. Feedback intensity is modelled as the probability of activating each clause. For input of class y=0, the probability of activating a clause is:
 <p align="center">
 <img src="http://latex.codecogs.com/svg.latex?\frac{T + \mathrm{max}(-T, \mathrm{min}(T, v))}{2T}" border="0"/>
 </p>
