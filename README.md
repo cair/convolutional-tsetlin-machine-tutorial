@@ -275,7 +275,7 @@ The Convolutional Tsetlin Machine is now in its goal state, stable in a Nash Equ
 </p>
 
 <p>
-As seen, two clauses have been allocated to each sub-pattern. Thus, for any sub-pattern, the combined output of the complete set of clauses is 2 for y=1 and -2 for y=0. Thus, no further learning is necessary for the detection of the XOR pattern.
+As seen, two clauses have been allocated to each sub-pattern. Thus, for any sub-pattern, the combined output of the complete set of clauses is 2 for y=1 and -2 for y=0. Thus, no further learning is necessary for the detection of the XOR patterns.
 </p>
 
 The above example Nash Equilibrium is rather simple. It manifests when all the patterns are perfectly classified and the summed clause output reaches 2/-2. For more complex scenarios, the Nash Equilibria of the Convolutional Tsetlin Machine also balance false negative against false positive classifications, while combating overfitting. This happens when Type Ia, Type Ib and Type II feedback are in balance.
