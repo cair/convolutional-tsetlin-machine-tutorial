@@ -176,7 +176,7 @@ If a clause is not activated, no feedback is given to the Tsetlin Automata of th
 </p>
 
 <p>
-<b>Remark 1.</b> Observe that the future returns of a clause that invests in representing a specific sub-pattern are diminishing with the number of other clauses that also do so. This is crucial for making sure that the Tsetlin Automata teams for the clauses are stimulated to distribute themselves across the critical sub-patterns. 
+<b>Remark 1.</b> Observe that the future returns of a clause that represents a specific sub-pattern are diminishing with the number of other clauses that also do so. This is crucial for making sure that the Tsetlin Automata teams for the clauses are stimulated to distribute themselves across the critical sub-patterns. 
 </p>
 
 <p>
