@@ -172,7 +172,7 @@ and for input of class y=1, the clause activation probability is:
 <img src="http://latex.codecogs.com/svg.latex?\frac{T - \mathrm{max}(-T, \mathrm{min}(T, v))}{2T}" border="0"/>
 </p>
 <p>
-Observe that the future returns of a clause that invests in representing a specific sub-pattern are diminishing with the number of other clauses that also invest in the same sub-pattern. This is crucial for making sure that the Tsetlin Automata teams for the clauses are stimulated to distribute themselves across the critical sub-patterns. 
+If a clause is not activated, no feedback is given to the Tsetlin Automata of that clause. Observe that the future returns of a clause that invests in representing a specific sub-pattern are diminishing with the number of other clauses that also invest in the same sub-pattern. This is crucial for making sure that the Tsetlin Automata teams for the clauses are stimulated to distribute themselves across the critical sub-patterns. 
 </p>
 <p>
   <b>Remark.</b> A larger T (with a corresponding increase in the number of clauses) makes the learning more robust. This is because more clauses are involved in learning each specific pattern, introducing an ensemble effect.
