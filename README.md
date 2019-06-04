@@ -119,7 +119,7 @@ Each clause of the Convolutional Tsetlin Machine is composed by a team of Tsetli
   <img width="90%" src="https://github.com/olegranmo/blob/blob/master/Example_Configuration_1a.png">
 </p>
 <p>
-The team in the figure has for instance decided to include <img src="http://latex.codecogs.com/svg.latex?{x_{1,1}}, {x_{2,2}}, \lnot{x_{1,2}}" border="0"/> and <img src="http://latex.codecogs.com/svg.latex?\lnot{x_{1,2}}" border="0"/>, producing the clause <img src="http://latex.codecogs.com/svg.latex?C = {x_{1,1}} \land {x_{2,2}} \land \lnot{x_{1,2}} \land \lnot{x_{1,2}}" border="0"/>.
+The team in the figure has for instance decided to include <img src="http://latex.codecogs.com/svg.latex?{x_{1,1}}, {x_{2,2}}, \lnot{x_{2,1}}" border="0"/> and <img src="http://latex.codecogs.com/svg.latex?\lnot{x_{1,2}}" border="0"/>, producing the clause <img src="http://latex.codecogs.com/svg.latex?C = {x_{1,1}} \land {x_{2,2}} \land \lnot{x_{1,2}} \land \lnot{x_{1,2}}" border="0"/>.
 </p>
 
 ### Recognition with the Convolutional Tsetlin Machine
