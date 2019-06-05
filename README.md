@@ -166,7 +166,7 @@ Each clause can be seen as a resource for representing patterns. With limited re
 <img src="http://latex.codecogs.com/svg.latex?\frac{T + \mathrm{max}(-T, \mathrm{min}(T, v))}{2T}" border="0"/>
 </p>
 <p>
-Using T=2 as an example, feedback intensity is 0.0 up to v=-2, before it increases to 1.0 at v=2:
+Using T=2 as an example, feedback intensity is 0.0 up to v=-2. Thereafter, it gradually increases, reaching 1.0 at v=2:
 </p>
 <p align="center">
   <img width="60%" src="https://github.com/olegranmo/blob/blob/master/Clause_Activation_Probability_y0.png">
@@ -178,7 +178,7 @@ For input of class y=1, the clause activation probability is:
 <img src="http://latex.codecogs.com/svg.latex?\frac{T - \mathrm{max}(-T, \mathrm{min}(T, v))}{2T}" border="0"/>
 </p>
 <p>
-Then feedback intensity is 1.0 up to v=-2, before it falls to 0.0 from v=2, with T=2:
+Then, with T=2, feedback intensity is 1.0 up to v=-2. From v=-2, intensity drops gradually, reaching 0.0 atv=2:
 </p>
 <p align="center">
   <img width="60%" src="https://github.com/olegranmo/blob/blob/master/Clause_Activation_Probability_y1.png">
