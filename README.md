@@ -292,6 +292,10 @@ As seen, two clauses have been allocated to each sub-pattern. Thus, for any sub-
 
 The above example Nash Equilibrium is rather simple. It manifests when all the patterns are perfectly classified and the summed clause output reaches 2/-2. For more complex scenarios, the Nash Equilibria of the Convolutional Tsetlin Machine also balance false negative against false positive classifications, while combating overfitting. This happens when Type Ia, Type Ib and Type II feedback are in balance.
 
+## Tutorial Slides
+
+You find slides for this tutorial <a href="https://www.researchgate.net/publication/333648109_Slides_for_the_Convolutional_Tsetlin_Machine_Tutorial_httpsgithubcomcairconvolutional-tsetlin-machine">here</a>.
+
 ## Demo
 
 Coming soon.
