@@ -294,7 +294,7 @@ The above example Nash Equilibrium is rather simple. It manifests when all the p
 
 ## Tutorial Slides
 
-You find slides for this tutorial <a href="https://www.researchgate.net/publication/333648109_Slides_for_the_Convolutional_Tsetlin_Machine_Tutorial_httpsgithubcomcairconvolutional-tsetlin-machine">here</a>.
+You find the slides for this tutorial <a href="https://www.researchgate.net/publication/333648109_Slides_for_the_Convolutional_Tsetlin_Machine_Tutorial_httpsgithubcomcairconvolutional-tsetlin-machine">here</a>.
 
 ## Demo
 
