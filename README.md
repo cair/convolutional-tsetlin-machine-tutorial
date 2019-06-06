@@ -178,7 +178,7 @@ For input of class y=1, the clause activation probability is:
 <img src="http://latex.codecogs.com/svg.latex?\frac{T - \mathrm{max}(-T, \mathrm{min}(T, v))}{2T}" border="0"/>
 </p>
 <p>
-Then, with T=2, feedback intensity is 1.0 up to v=-2. From v=-2, intensity drops gradually, reaching 0.0 at v=2:
+Then, with T=2, feedback intensity is 1.0 up to v=-2. From v=-2, intensity drops, reaching 0.0 at v=2:
 </p>
 <p align="center">
   <img width="60%" src="https://github.com/olegranmo/blob/blob/master/Clause_Activation_Probability_y1.png">
