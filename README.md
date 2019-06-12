@@ -292,18 +292,32 @@ As seen, two clauses have been allocated to each sub-pattern. Thus, for any sub-
 
 The above example Nash Equilibrium is rather simple. It manifests when all the patterns are perfectly classified and the summed clause output reaches 2/-2. For more complex scenarios, the Nash Equilibria of the Convolutional Tsetlin Machine also balance false negative against false positive classifications, while combating overfitting. This happens when Type Ia, Type Ib and Type II feedback are in balance.
 
+## Demo
+
+```bash
+pip install pyTsetlinMachine
+
+./2DNoisyXORDemo.py 
+
+1: 99.97% 64.3s
+2: 99.99% 65.3s
+3: 99.99% 64.3s
+...
+```
+
 ## Tutorial Slides
 
 You find the slides for this tutorial <a href="https://www.researchgate.net/publication/333648109_Slides_for_the_Convolutional_Tsetlin_Machine_Tutorial_httpsgithubcomcairconvolutional-tsetlin-machine">here</a>.
-
-## Demo
-
-Coming soon.
 
 ## Learning Behaviour
 The below figure depicts training and test accuracy for the Convolutional Tsetlin Machine on MNIST, epoch-by-epoch, in a single run. 
 ![Figure 4](https://github.com/olegranmo/blob/blob/master/performance_by_epoch_MNIST.png)
 Test accuracy peaks at 99.50% after 168 epochs and 99.51% after 327 epochs. Further, it climbs quickly in the first epochs, passing 99% already in epoch 2. Training accuracy approaches 100%. 
+
+## Requirements
+
+- Python 3.7.x https://www.python.org/downloads/
+- Numpy http://www.numpy.org/
 
 ## Citation
 
