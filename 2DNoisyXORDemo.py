@@ -14,14 +14,11 @@ Y_test = test_data[:,-1]
 
 ctm = MultiClassConvolutionalTsetlinMachine(40, 60, 3.9, patch_dim=(2, 2))
 
-average = 0.0
+results = np.zeros(0)
 for i in range(100):
 	start = time()
 	ctm.fit(X_train, Y_train, epochs=5000)
 	stop = time()
 
-	average += ctm.evaluate(X_test, Y_test)
-	print("%d: %.2f%% %.1fs" % (i+1, 100*average/(i+1), stop-start))
-
-
-
+	results = np.append(results, 100.0*ctm.evaluate(X_test, Y_test))
+	print("#%d Mean Accuracy (%%): %.2f; Std.dev.: %.2f; Training Time: %.1f ms/epoch" % (i+1, np.mean(results), np.std(results), (stop-start)/5.0))
