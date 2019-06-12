@@ -299,9 +299,9 @@ pip install pyTsetlinMachine
 
 ./2DNoisyXORDemo.py 
 
-1: 99.97% 64.3s
-2: 99.99% 65.3s
-3: 99.99% 64.3s
+#1 Mean Accuracy (%): 99.97; Std.dev.: 0.00; Training Time: 13.1 ms/epoch
+#2 Mean Accuracy (%): 99.99; Std.dev.: 0.01; Training Time: 12.8 ms/epoch
+#3 Mean Accuracy (%): 99.99; Std.dev.: 0.01; Training Time: 13.2 ms/epoch
 ...
 ```
 
@@ -316,8 +316,8 @@ Test accuracy peaks at 99.50% after 168 epochs and 99.51% after 327 epochs. Furt
 
 ## Requirements
 
-- Python 3.7.x https://www.python.org/downloads/
-- Numpy http://www.numpy.org/
+- Python 3.7.x, https://www.python.org/downloads/
+- Numpy, http://www.numpy.org/
 
 ## Citation
 
