@@ -21,7 +21,7 @@ for i in range(100):
 	stop = time()
 
 	average += ctm.evaluate(X_test, Y_test)
-	print("%d: %.2 %.1fs" % (i+1, 100*average/(i+1), stop-start))
+	print("%d: %.2f%% %.1fs" % (i+1, 100*average/(i+1), stop-start))
 
 
 
