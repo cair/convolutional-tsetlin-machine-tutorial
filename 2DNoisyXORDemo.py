@@ -4,11 +4,11 @@ from pyTsetlinMachine.tm import MultiClassConvolutionalTsetlinMachine
 import numpy as np 
 from time import time
 
-train_data = np.loadtxt("2DNoisyXORTrainingData.txt").astype(np.uint32)
+train_data = np.loadtxt("2DNoisyXORTrainingData.txt")
 X_train = train_data[:,0:-1].reshape(train_data.shape[0], 4, 4)
 Y_train = train_data[:,-1]
 
-test_data = np.loadtxt("2DNoisyXORTestData.txt").astype(np.uint32)
+test_data = np.loadtxt("2DNoisyXORTestData.txt")
 X_test = test_data[:,0:-1].reshape(test_data.shape[0], 4, 4)
 Y_test = test_data[:,-1]
 
