@@ -303,6 +303,8 @@ pip install pyTsetlinMachine
 #2 Mean Accuracy (%): 99.99; Std.dev.: 0.01; Training Time: 12.8 ms/epoch
 #3 Mean Accuracy (%): 99.99; Std.dev.: 0.01; Training Time: 13.2 ms/epoch
 ...
+#99 Mean Accuracy (%): 99.74; Std.dev.: 0.36; Training Time: 13.0 ms/epoch
+#100 Mean Accuracy (%): 99.75; Std.dev.: 0.36; Training Time: 13.0 ms/epoch
 ```
 
 ## Tutorial Slides
