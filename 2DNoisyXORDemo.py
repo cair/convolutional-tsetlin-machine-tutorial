@@ -20,5 +20,5 @@ for i in range(100):
 	ctm.fit(X_train, Y_train, epochs=5000)
 	stop = time()
 
-	results = np.append(results, 100.0*ctm.evaluate(X_test, Y_test))
+	results = np.append(results, 100*(ctm.predict(X_test) == Y_test).mean())
 	print("#%d Mean Accuracy (%%): %.2f; Std.dev.: %.2f; Training Time: %.1f ms/epoch" % (i+1, np.mean(results), np.std(results), (stop-start)/5.0))
