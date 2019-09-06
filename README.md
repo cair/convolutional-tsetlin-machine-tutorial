@@ -312,9 +312,17 @@ pip install pyTsetlinMachine
 You find the slides for this tutorial <a href="https://www.researchgate.net/publication/333648109_Slides_for_the_Convolutional_Tsetlin_Machine_Tutorial_httpsgithubcomcairconvolutional-tsetlin-machine">here</a>.
 
 ## Learning Behaviour
-The below figure depicts training and test accuracy for the Convolutional Tsetlin Machine on MNIST, epoch-by-epoch, in a single run. 
+<p>
+The below figure depicts training and test accuracy for the Convolutional Tsetlin Machine on MNIST, epoch-by-epoch, in a single run.
+</p>  
 ![Figure 4](https://github.com/olegranmo/blob/blob/master/performance_by_epoch_MNIST.png)
+<p>
 Test accuracy peaks at 99.50% after 168 epochs and 99.51% after 327 epochs. Further, it climbs quickly in the first epochs, passing 99% already in epoch 2. Training accuracy approaches 100%. 
+</p>
+
+<p align="center">
+  <img width="65%" src="https://github.com/olegranmo/blob/blob/master/MNIST_Clauses_II.png">
+</p>
 
 ## Requirements
 
