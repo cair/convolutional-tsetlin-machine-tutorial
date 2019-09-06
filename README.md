@@ -323,7 +323,7 @@ Test accuracy peaks at 99.51% after 327 epochs. Further, it climbs quickly in th
 </p>
 
 <p>
-Let us now look at a few example 10x10 bit patterns produced by the Convolutional Tsetlin Machine for MNIST, including valid convolution positions.  In the figure below, the "*" symbol can either take the value "0" or "1". The remaining bit values require strict matching.
+Let us now look at a few example 10x10 convolution filters produced by the Convolutional Tsetlin Machine for MNIST, including valid convolution positions.  In the figure below, the "*" symbol can either take the value "0" or "1". The remaining bit values require strict matching.
 </p>
 <p align="center">
   <img width="75%" src="https://github.com/olegranmo/blob/blob/master/MNIST_Clauses_II.png">
