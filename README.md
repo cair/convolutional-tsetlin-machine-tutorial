@@ -323,7 +323,7 @@ Test accuracy peaks at 99.50% after 168 epochs and 99.51% after 327 epochs. Furt
 </p>
 
 <p align="center">
-  <img width="65%" src="https://github.com/olegranmo/blob/blob/master/MNIST_Clauses_II.png">
+  <img width="75%" src="https://github.com/olegranmo/blob/blob/master/MNIST_Clauses_II.png">
 </p>
 
 ## Requirements
