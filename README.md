@@ -319,7 +319,7 @@ The below figure depicts training and test accuracy for the Convolutional Tsetli
 ![Figure 4](https://github.com/olegranmo/blob/blob/master/performance_by_epoch_MNIST.png)
 
 <p>
-Test accuracy peaks at 99.50% after 168 epochs and 99.51% after 327 epochs. Further, it climbs quickly in the first epochs, passing 99% already in epoch 2. Training accuracy approaches 100%. 
+Test accuracy peaks at 99.51% after 327 epochs. Further, it climbs quickly in the first epochs, passing 99% already in epoch 2. Training accuracy approaches 100%. 
 </p>
 
 Let us now look at a few example 10x10 bit patterns produced by the Convolutional Tsetlin Machine for MNIST, including valid convolution positions. 
