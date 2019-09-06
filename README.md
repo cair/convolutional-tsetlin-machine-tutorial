@@ -314,8 +314,10 @@ You find the slides for this tutorial <a href="https://www.researchgate.net/publ
 ## Learning Behaviour
 <p>
 The below figure depicts training and test accuracy for the Convolutional Tsetlin Machine on MNIST, epoch-by-epoch, in a single run.
-</p>  
+</p>
+
 ![Figure 4](https://github.com/olegranmo/blob/blob/master/performance_by_epoch_MNIST.png)
+
 <p>
 Test accuracy peaks at 99.50% after 168 epochs and 99.51% after 327 epochs. Further, it climbs quickly in the first epochs, passing 99% already in epoch 2. Training accuracy approaches 100%. 
 </p>
