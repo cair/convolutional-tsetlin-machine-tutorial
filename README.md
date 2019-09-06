@@ -322,11 +322,12 @@ The below figure depicts training and test accuracy for the Convolutional Tsetli
 Test accuracy peaks at 99.51% after 327 epochs. Further, it climbs quickly in the first epochs, passing 99% already in epoch 2. Training accuracy approaches 100%. 
 </p>
 
-Let us now look at a few example 10x10 bit patterns produced by the Convolutional Tsetlin Machine for MNIST, including valid convolution positions. 
+Let us now look at a few example 10x10 bit patterns produced by the Convolutional Tsetlin Machine for MNIST, including valid convolution positions.  In the figure below, the "*" symbol can either take the value "0" or "1". The remaining bit values require strict matching. 
 <p align="center">
   <img width="75%" src="https://github.com/olegranmo/blob/blob/master/MNIST_Clauses_II.png">
 </p>
-Here "0: UL" means "upper left" of the image for digit "0". We can see clearly that "0: UL", "0: UR", "0: LL" and "0: LR" jointly construct the shape "0''. The clauses for the other digits behave similarly, and we thus just illustrate selected patch positions for each digit.
+Further, "0: UL" means "upper left" of the image for digit "0". We can see clearly that "0: UL", "0: UR", "0: LL" and "0: LR" jointly construct the shape "0''. The clauses for the other digits behave similarly, and we thus just illustrate selected patch positions for each digit. As seen, the patterns are relatively easy to interpret for humans compared to, e.g., a neural
+network. They are also efficient to evaluate for computers, involving only logical operators.
 
 ## Requirements
 
