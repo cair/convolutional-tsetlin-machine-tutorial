@@ -1,6 +1,10 @@
 # The Convolutional Tsetlin Machine
 The Convolutional Tsetlin Machine (<a href="https://arxiv.org/abs/1905.09688">https://arxiv.org/abs/1905.09688</a>) learns interpretable filters using propositional formulae. The propositional formulae are composed by a collective of Tsetlin Automata coordinated through a game. The Convolutional Tsetlin Machine is an interpretable alternative to convolutional neural networks.
 
+## Implementations
+
+* High-level Tsetlin Machine Python API with fast C-extensions. Implements the Tsetlin Machine, Convolutional Tsetlin Machine and Regression Tsetlin Machine, with support for continuous features. https://github.com/cair/pyTsetlinMachine, https://pypi.org/project/pyTsetlinMachine/
+
 ## Tutorial
 
 ### Example Problem: 2D Noisy XOR
