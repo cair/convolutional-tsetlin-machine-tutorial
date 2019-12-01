@@ -3,7 +3,7 @@ The Convolutional Tsetlin Machine (<a href="https://arxiv.org/abs/1905.09688">ht
 
 ## Implementation
 
-* High-level Tsetlin Machine Python API with fast C-extensions. Implements the Tsetlin Machine, Convolutional Tsetlin Machine and Regression Tsetlin Machine, with support for continuous features. https://github.com/cair/pyTsetlinMachine, https://pypi.org/project/pyTsetlinMachine/
+* High-level Tsetlin Machine Python API with fast C-extensions. Implements the Tsetlin Machine, Convolutional Tsetlin Machine, Regression Tsetlin Machine, and Weighted Tsetlin Machine, with support for continuous features, multi-granular clauses, and clause indexing, https://github.com/cair/pyTsetlinMachine, https://pypi.org/project/pyTsetlinMachine/
 
 ## Tutorial
 
