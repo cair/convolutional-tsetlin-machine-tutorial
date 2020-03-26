@@ -3,6 +3,8 @@ The Convolutional Tsetlin Machine (<a href="https://arxiv.org/abs/1905.09688">ht
 
 ## Implementation
 
+* Multi-threaded implementation of the Tsetlin Machine, Convolutional Tsetlin Machine, Regression Tsetlin Machine, and Weighted Tsetlin Machine, with support for continuous features and multi-granular clauses, https://github.com/cair/pyTsetlinMachineParallel, https://pypi.org/project/pyTsetlinMachineParallel/
+
 * High-level Tsetlin Machine Python API with fast C-extensions. Implements the Tsetlin Machine, Convolutional Tsetlin Machine, Regression Tsetlin Machine, and Weighted Tsetlin Machine, with support for continuous features, multi-granular clauses, and clause indexing, https://github.com/cair/pyTsetlinMachine, https://pypi.org/project/pyTsetlinMachine/
 
 ## Tutorial
@@ -354,7 +356,7 @@ network. They are also efficient to evaluate for computers, involving only logic
 
 ## Licence
 
-Copyright (c) 2019 Ole-Christoffer Granmo
+Copyright (c) 2020 Ole-Christoffer Granmo
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
