@@ -88,7 +88,7 @@ It is now in the right half of states and therefore selects Action 2. This time,
   <img width="65%" src="https://github.com/olegranmo/blob/blob/master/fixed_deterministic_run_3.png">
 </p>
 <p>
-At this point, it is quite confident that Action 2 is better than Action 1. Indeed, at least two consequtive Penalties are needed to make the Tsetlin Automaton change its mind and switch back to performing Action 1 again.
+At this point, it is quite confident that Action 2 is better than Action 1. Indeed, at least two consecutive Penalties are needed to make the Tsetlin Automaton change its mind and switch back to performing Action 1 again.
 </p>
 
 <p>
@@ -141,7 +141,7 @@ The Convolutional Tsetlin Machine recognizes patterns by first turning the input
 Each conjunctive clause is then evaluated on each patch. For each clause, the outcome for each patch is ORed to produce the output of the clause. The figure shows this procedure for one of the clauses in our 2D Noisy XOR example.
 </p>
 <p>
-To make the clauses location-aware, each patch is further enhanced with its coordinates within the image (see figure). Location awareness may prove useful in applications where both patterns and their location are distinguishing features, e.g. recognition of facial features such as eyes, eyebrows, nose, mouth, etc. in facial expression recognition. These coordinates are incorporated as additional propositional variables in the input vector. However, for the sake of brevity, I will not considere the details of this incorporation here. Instead, I will simply assume that the information on the coordinates already have been incorporated into the clauses.
+To make the clauses location-aware, each patch is further enhanced with its coordinates within the image (see figure). Location awareness may prove useful in applications where both patterns and their location are distinguishing features, e.g. recognition of facial features such as eyes, eyebrows, nose, mouth, etc. in facial expression recognition. These coordinates are incorporated as additional propositional variables in the input vector. However, for the sake of brevity, I will not consider the details of this incorporation here. Instead, I will simply assume that the information on the coordinates already have been incorporated into the clauses.
 </p>
 
 #### Summation and Thresholding Step
@@ -155,7 +155,7 @@ In our example architecture, there are eight conjunctive clauses:
 The above configuration consists of four positive clauses which represent XOR patterns. These are used to recognize images of class y=1. It also consists of four negative clauses which represent patterns associated with class y=0.  Observe that each clause has been annoted with the positional information it has incorporated, using thresholds on the x and y coordinates. As explained earlier, the bit patterns inside each clause have been decided by the eight corresponding Tsetlin Automata, one per literal in the 2x2 filter.
 </p>
 <p>
-Our example clause is highlighted in the figure, outputing 1 due to matching the input image. Note that some of the other clauses are matching the image content too. However, their positional information is incompatible with the input, so they output 0. As in the classic Tsetlin Machine, the output from each clause is processed further by summation and then thresholding to decide the class. Above, positive clauses outputting 1 are in majority, so the Convolutional Tsetlin Machine assigns class y=1 to the input image.
+Our example clause is highlighted in the figure, outputting 1 due to matching the input image. Note that some of the other clauses are matching the image content too. However, their positional information is incompatible with the input, so they output 0. As in the classic Tsetlin Machine, the output from each clause is processed further by summation and then thresholding to decide the class. Above, positive clauses outputting 1 are in majority, so the Convolutional Tsetlin Machine assigns class y=1 to the input image.
 </p>
 
 ### Learning with the Convolutional Tsetlin Machine
@@ -165,7 +165,7 @@ We are now ready to address how the Convolutional Tsetlin Machine learns. For th
 #### Allocation of Pattern Representation Resources
 
 <p>
-Each clause can be seen as a resource for representing patterns. With limited resources, it is critical to allocate the resources wisely. The Convolutional Tsetlin Machine seeks to allocate clauses uniformly among the crucial patterns in the dataset. This is achieved with a target value T. That is, each time the outputs of the clauses are summed up, T is the target value for the summation. For inputs of class y=0 the target value is -T and for inputs of class y=1 the target value is T. 
+Each clause can be seen as a resource for representing patterns. With limited resources, it is critical to allocate resources wisely. The Convolutional Tsetlin Machine seeks to allocate clauses uniformly among the crucial patterns in the dataset. This is achieved with a target value T. That is, each time the outputs of the clauses are summed up, T is the target value for the summation. For inputs of class y=0 the target value is -T and for inputs of class y=1 the target value is T. 
 </p>
 <p>The resources are allocated by controlling the intensity of the bandit learning feedback cycle. In brief, the feedback cycle is increasingly intensified the farther away the clause output is from the target value T. Conversely, feedback comes to a complete standstill when T is reached or exceeded. Let v denote the summed up clause output. Feedback intensity is modelled as the probability of activating each clause. For input of class y=0, the probability of activating a clause is:
 <p align="center">
@@ -233,12 +233,12 @@ To balance usage of pattern representation resources, one of the three clauses s
 <p align="center">
 <img src="http://latex.codecogs.com/svg.latex?\frac{1}{s}" border="0"/>
 </p>
-Additionally, this mechanism combats overfitting, because a smaller s forces focusing on more frequent patterns. In effect, the underlying noise is "forgotten" by the persistent reinforcment of Exclude actions. A larger s, on the other hand, provides finer patterns.
+Additionally, this mechanism combats overfitting, because a smaller s forces focusing on more frequent patterns. In effect, the underlying noise is "forgotten" by the persistent reinforcement of Exclude actions. A larger s, on the other hand, provides finer patterns.
 
 ##### Type Ia Feedback
 
 <p>
-Let us now consider Type Ia feedback. Eventually, Type Ib feedback makes an additional clause recognize the underrepresented pattern in our example:
+Let us now consider Type Ia feedback. Eventually, Type Ib feedback makes an additional clause to recognize the underrepresented pattern in our example:
 </p> 
 <p align="center">
   <img width="10%" src="https://github.com/olegranmo/blob/blob/master/y_1a.png">
@@ -329,7 +329,7 @@ Test accuracy peaks at 99.51% after 327 epochs. Further, it climbs quickly in th
 </p>
 
 <p>
-Let us now look at a few example 10x10 convolution filters produced by the Convolutional Tsetlin Machine for MNIST, including valid convolution positions.  In the figure below, the "*" symbol can either take the value "0" or "1". The remaining bit values require strict matching.
+Let us now look at a few examples 10x10 convolution filters produced by the Convolutional Tsetlin Machine for MNIST, including valid convolution positions.  In the figure below, the "*" symbol can either take the value "0" or "1". The remaining bit values require strict matching.
 </p>
 <p align="center">
   <img width="75%" src="https://github.com/olegranmo/blob/blob/master/MNIST_Clauses_II.png">
